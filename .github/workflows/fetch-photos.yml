@@ -1,0 +1,59 @@
+name: Fetch Unsplash photos
+
+# Runs when a request file is pushed to photo-requests/.
+# Each non-empty line: <folder/filename> <images.unsplash.com URL> [download_location URL]
+# Photos are saved under photos/ and committed back to main.
+
+on:
+  push:
+    branches: [main]
+    paths: ['photo-requests/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-photos
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download requested photos
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for req in photo-requests/*.txt; do
+            while read -r name url track || [ -n "${name:-}" ]; do
+              [ -z "${name:-}" ] && continue
+              case "$name" in \#*) continue ;; esac
+              # Only accept Unsplash image URLs and safe file names
+              case "$url" in https://images.unsplash.com/*) ;; *) echo "Skipping non-Unsplash URL for $name"; continue ;; esac
+              case "$name" in *..*|/*) echo "Skipping unsafe name $name"; continue ;; esac
+              out="photos/${name}.jpg"
+              if [ -f "$out" ]; then echo "Already have $out"; continue; fi
+              mkdir -p "$(dirname "$out")"
+              sep='?'; case "$url" in *\?*) sep='&' ;; esac
+              curl -fsSL --retry 3 "${url}${sep}w=2160&fm=jpg&q=85" -o "$out"
+              echo "Saved $out ($(stat -c%s "$out") bytes)"
+              # Tell Unsplash the photo was used, if an API key is configured
+              if [ -n "${UNSPLASH_ACCESS_KEY:-}" ] && [ -n "${track:-}" ]; then
+                curl -fsS -H "Authorization: Client-ID ${UNSPLASH_ACCESS_KEY}" "$track" -o /dev/null && echo "Download recorded with Unsplash"
+              fi
+            done < "$req"
+          done
+
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add photos || true
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Fetch requested Unsplash photos"
+          git push
