@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "platform": "google_business_profile",
-  "status": "approved",
+  "status": "held",
   "topic": "ChronicStress",
   "locations": {
     "Kew": "locations/7469801593432049842",
@@ -11,5 +11,6 @@
   "cta_url": "https://equalpsychology.com.au/blog/chronic-stress-and-the-brain",
   "image_url": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2026-10/2026-10-17-chronic-stress.png",
   "summary": "Ongoing stress can show up as brain fog, forgetfulness and low mood. That is because chronic stress acts on the same brain systems that manage attention, memory and mood, so they tend to move together, and they tend to ease as the load comes down.\n\nOur article explains what ongoing stress does to the brain and the small things that help the system settle.\n\nEqual Psychology provides psychological care for adults and older adults in Kew, Croydon, and online across Melbourne. Medicare rebates available with a GP referral.\n\nRead it on our blog: https://equalpsychology.com.au/blog/chronic-stress-and-the-brain",
-  "results": {}
+  "results": {},
+  "held_reason": "Blog check could not be completed on 2026-10-17: the fetch of blog_url (https://equalpsychology.com.au/blog/chronic-stress-and-the-brain) failed because the web-fetch permission request timed out in the unattended run, so the blog could not be confirmed live. Not posted to any platform."
 }

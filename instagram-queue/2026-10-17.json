@@ -2,7 +2,7 @@
   "date": "2026-10-17",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "held",
   "format": "carousel",
   "topic": "Chronic stress and the brain (carousel)",
   "blog_url": "https://equalpsychology.com.au/blog/chronic-stress-and-the-brain",
@@ -16,5 +16,6 @@
     "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-10/2026-10-17-chronic-stress-carousel/slide-7.png",
     "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-10/2026-10-17-chronic-stress-carousel/slide-8.png"
   ],
-  "caption": "How chronic stress changes attention, memory and mood, and what helps the brain settle.\n\nStress that lasts starts to feel like a background hum. Names slip, focus frays, and you can feel flat as well as forgetful. That is because ongoing stress acts on the same brain systems that handle attention, memory and mood, so the three tend to move together. The changes are real, and they tend to ease as the load comes down.\n\nFull article: link in bio.\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #chronicstress #stressandthebrain #psychologymelbourne #mentalhealth"
+  "caption": "How chronic stress changes attention, memory and mood, and what helps the brain settle.\n\nStress that lasts starts to feel like a background hum. Names slip, focus frays, and you can feel flat as well as forgetful. That is because ongoing stress acts on the same brain systems that handle attention, memory and mood, so the three tend to move together. The changes are real, and they tend to ease as the load comes down.\n\nFull article: link in bio.\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #chronicstress #stressandthebrain #psychologymelbourne #mentalhealth",
+  "held_reason": "Blog check could not be completed on 2026-10-17: the fetch of blog_url (https://equalpsychology.com.au/blog/chronic-stress-and-the-brain) failed because the web-fetch permission request timed out in the unattended run, so the blog could not be confirmed live. Not posted to any platform."
 }
