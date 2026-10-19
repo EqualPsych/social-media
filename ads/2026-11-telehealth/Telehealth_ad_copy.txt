@@ -1,15 +1,12 @@
-TELEHEALTH ADHD ADS: COPY AND SETUP
-Two versions, because the psychiatry pathway can only be offered where a Victorian psychiatrist can prescribe by telehealth (VIC and NSW, as at October 2026).
+TELEHEALTH ADHD AD: AUSTRALIA-WIDE (single version)
+Video: tele_au.mp4 (27 seconds, 1080x1920, silent)
 
-==================================================
-AD A: Regional Victoria and regional NSW  (video: tele_vicnsw.mp4)
-==================================================
 Primary text:
 Distance shouldn't decide how thorough an ADHD assessment is.
 
 Australian guidelines say an adult ADHD diagnosis should not rest on questionnaires alone. Our telehealth assessment looks at your history back to childhood, your health and sleep, daily life, and input from someone who knows you, if you choose.
 
-You receive a full written report, a letter for your GP and, if you want to discuss medication, a report for a psychiatrist. For clients in Victoria and NSW, we developed a psychiatry pathway with Dr Luisa Fernandez of North Psychiatry, ready with a GP referral if you choose it.
+You receive a full written report, a letter for your GP and, if you want to discuss medication, a report for a psychiatrist. We developed a psychiatry pathway with Dr Luisa Fernandez of North Psychiatry, available by telehealth with a GP referral if you choose it. Medication rules differ between states, and she will advise what applies where you live.
 
 Fees: $720 for the assessment and written reports. No Medicare rebate applies. Psychiatrist fees are separate and set by the psychiatrist.
 
@@ -18,31 +15,10 @@ General information only, not psychological advice.
 Headline: Adult ADHD assessment by telehealth
 Button: Learn more
 Link: https://www.equalpsychology.com.au/services/adhd
-Location: Victoria and New South Wales, EXCLUDING Melbourne (Kew/Croydon ad already covers it) and Sydney (40 km radius each).
 
-==================================================
-AD B: Tasmania, NT, and regional QLD, SA and WA  (video: tele_national.mp4)
-==================================================
-Primary text:
-Distance shouldn't decide how thorough an ADHD assessment is.
-
-Australian guidelines say an adult ADHD diagnosis should not rest on questionnaires alone. Our telehealth assessment looks at your history back to childhood, your health and sleep, daily life, and input from someone who knows you, if you choose.
-
-You receive a full written report and a letter for your GP. If you want to discuss medication, we write a report to support that conversation with a GP or psychiatrist near you. Prescribing rules differ between states.
-
-Fees: $720 for the assessment and written reports. No Medicare rebate applies.
-
-General information only, not psychological advice.
-
-Headline: Adult ADHD assessment by telehealth
-Button: Learn more
-Link: https://www.equalpsychology.com.au/services/adhd
-Location: Tasmania and Northern Territory (whole), plus Queensland, South Australia and Western Australia EXCLUDING Brisbane, Adelaide and Perth (40 km radius each).
-
-==================================================
 SETUP (Meta Ads Manager, 7 days)
-==================================================
-Objective: Traffic (website visits). Upload each MP4 as its own ad set; no need to post them to the feed.
-Budget: $8/day per ad set ($16/day total, $112 for the week).
-Age 25 to 55. No interest or health targeting (Meta restricts it, and the copy is written so it does not assume the viewer has ADHD).
-Suggested timing: 9 to 15 November, straight after the Melbourne ad week (2 to 8 November), so results are comparable.
+Objective: Traffic (website visits). One ad set, upload the MP4 directly.
+Location: Australia, EXCLUDING Melbourne (40 km; the Kew/Croydon ad covers it).
+Budget: $16/day ($112 for the week).
+Age 25 to 55. No interest or health targeting (Meta restricts it; the copy does not assume the viewer has ADHD).
+Suggested timing: 9 to 15 November, straight after the Melbourne ad week (2 to 8 November).
