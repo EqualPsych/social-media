@@ -1,0 +1,9 @@
+{
+  "rule": "Each Reel uses a different bed from the previous two Reels in the queue (any series). Record the bed in the queue file as \"music\".",
+  "beds": {
+    "piano":   {"file": "audio/bed-calm-piano.mp3",      "style": "calm felt piano and pads, ~70 BPM"},
+    "guitar":  {"file": "audio/bed-acoustic-guitar.mp3", "style": "fingerpicked acoustic guitar and upright bass, ~85 BPM"},
+    "ambient": {"file": "audio/bed-soft-ambient.mp3",    "style": "soft ambient electronic, pads and muted pulse, ~90 BPM"},
+    "marimba": {"file": "audio/bed-marimba-strings.mp3", "style": "marimba, celesta and strings, ~95 BPM"}
+  }
+}
