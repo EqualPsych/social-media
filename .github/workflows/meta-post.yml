@@ -1,0 +1,56 @@
+name: Post to Instagram and Facebook (Meta API)
+
+# Free route for Instagram and the Facebook Page (21 Oct 2026). Publishes today's approved instagram-queue file through
+# Meta's own API using the META_PAGE_TOKEN repository secret, then records the result in the queue file. It only acts
+# when posting.json routes Instagram or Facebook to "meta". Each slot fires twice, an hour apart, so it lands at 8:22am
+# and 7:52pm Melbourne in both summer and winter time; the script skips the run that falls outside the window.
+on:
+  schedule:
+    - cron: '22 21 * * *'
+    - cron: '22 22 * * *'
+    - cron: '52 8 * * *'
+    - cron: '52 9 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check (test the token, post nothing) or post'
+        default: 'check'
+        type: choice
+        options: [check, post]
+      date:
+        description: 'Queue date to post (YYYY-MM-DD), only for mode post'
+        required: false
+      slot:
+        description: 'morning or evening, only for mode post'
+        required: false
+        default: 'morning'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: meta-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up
+        run: |
+          pip install --quiet pillow
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+      - name: Post
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" = "check" ]; then
+            python3 scripts/meta_post.py --check
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 scripts/meta_post.py ${{ inputs.date && format('--date {0}', inputs.date) || '' }} --slot ${{ inputs.slot || 'morning' }}
+          else
+            python3 scripts/meta_post.py
+          fi

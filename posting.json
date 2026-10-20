@@ -1,0 +1,7 @@
+{
+  "note": "Which route publishes each platform. 'zapier' = the Claude posting task through Zapier; 'meta' = the GitHub workflow meta-post.yml straight through Meta's API (free). Switch Instagram and Facebook to 'meta' only after 'python3 scripts/meta_post.py --check' succeeds in the workflow.",
+  "instagram": "zapier",
+  "facebook": "zapier",
+  "linkedin": "zapier",
+  "gbp": "zapier"
+}

@@ -25,14 +25,15 @@ def cycle(ds):
     return f'{y}-{m:02d}-24'
 
 def main():
+    route = json.load(open(os.path.join(ROOT, 'posting.json')))
     C = {}
     for q in ('instagram-queue', 'linkedin-queue', 'gbp-queue'):
         for f in glob.glob(os.path.join(ROOT, q, '2*.json')):
             d = json.load(open(f, encoding='utf-8'))
             if d.get('status') != 'approved': continue
             if q == 'instagram-queue':
-                n = 7 if d.get("share_to_feed") is False else 1
-                n += 0 if d.get('facebook_mirror') is False else 1
+                n = 0 if route.get('instagram') == 'meta' else (7 if d.get("share_to_feed") is False else 1)
+                n += 0 if d.get('facebook_mirror') is False or route.get('facebook') == 'meta' else 1
             elif q == 'linkedin-queue': n = 1
             else: n = len(d.get('locations') or {})
             c = C.setdefault(cycle(d['date']), {'posts': 0, 'calls': 0})
