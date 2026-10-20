@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T07:00:19Z",
+ "generated": "2026-10-20T07:13:11Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -74,31 +74,6 @@
     },
     "url": "https://www.instagram.com/p/Dec2rjAl3BR/"
    }
-  },
-  {
-   "date": "2026-10-14",
-   "weekday": "Wednesday",
-   "topic": "Stoicism (single)",
-   "hook": "Numbing how you feel is not self-control. It is self-control with the bill deferred.",
-   "format": "single",
-   "kind": "Single image",
-   "series": null,
-   "cover": null,
-   "voice": null,
-   "music": null,
-   "slot": "morning",
-   "companion_of": null,
-   "experiment": null,
-   "experiment_note": null,
-   "blog_url": "https://www.equalpsychology.com.au/post/the-stoicism-young-men-reach-for-and-the-one-that-actually-helps",
-   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-10/2026-10-14-stoicism-single/post.png",
-   "source": "instagram-queue/2026-10-14.json",
-   "platform": "facebook",
-   "status": "posted",
-   "posted_at": null,
-   "url": null,
-   "held_reason": "Blog check could not be completed on 2026-10-14: fetching the blog_url failed (page-fetch permission request was not answered during the unattended run), so the blog could not be confirmed live. Not posted. Blog confirmed live on re-check the same morning; post then published.",
-   "interactions": null
   },
   {
    "platform": "linkedin",

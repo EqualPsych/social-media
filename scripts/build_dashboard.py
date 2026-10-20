@@ -104,6 +104,8 @@ def main():
         if d.get('facebook_mirror') is False:
             continue
         fb = d.get('facebook') or {}
+        if not fb and d.get('status') not in ('approved', 'pending_review', 'held'):
+            continue   # posted before the Facebook mirror started (15 Oct 2026), or never mirrored
         fb_status = fb.get('status') or ('held' if d.get('status') == 'held' else d.get('status'))
         if fb_status == 'posted' or d.get('status') in ('approved', 'pending_review', 'held') or fb:
             fb_url = fb.get('id_or_url')
