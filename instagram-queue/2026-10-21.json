@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-21",
   "platform": "instagram",
   "account": "@equal_psychology",
   "status": "approved",
@@ -21,6 +21,11 @@
     {
       "from": "2026-10-21",
       "reason": "Zapier task limit reached until 23 Oct 2026 renewal"
+    },
+    {
+      "from": "2026-10-26",
+      "reason": "Back to its original date: Instagram and Facebook now post through Meta, not Zapier"
     }
-  ]
+  ],
+  "slot": "evening"
 }
