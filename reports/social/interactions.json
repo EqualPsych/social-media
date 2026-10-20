@@ -1,0 +1,93 @@
+{
+ "note": "Post interactions across Equal Psychology socials, written by the weekly tracking task (Mondays) and read by the monthly social report. One record per post per platform. 'day7' is frozen the first time a post is checked at 7 or more days old, so posts can be compared fairly; 'latest' is refreshed each week for 35 days after posting. Not available through the current connections: Instagram reach, saves and shares (no insights permission), LinkedIn impressions, and per-post Google Business figures (Google only gives profile-level numbers, kept in gbp.json).",
+ "followers": [
+  {
+   "date": "2026-10-20",
+   "instagram": 41,
+   "facebook": 3,
+   "linkedin": 21
+  }
+ ],
+ "posts": [
+  {
+   "platform": "instagram",
+   "date": "2026-10-14",
+   "format": "single",
+   "topic": "Stoicism (single)",
+   "id": "18027782447696772",
+   "url": "https://www.instagram.com/p/Dec2rjAl3BR/",
+   "latest": {
+    "checked": "2026-10-20",
+    "likes": 3,
+    "comments": 1
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-18",
+   "format": "reel",
+   "topic": "Your brain's best guess 1: Reaching out means more than you think",
+   "id": "18114473528134653",
+   "url": "https://www.instagram.com/reel/DenEO99DxuU/",
+   "latest": {
+    "checked": "2026-10-20",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-18",
+   "format": "reel",
+   "topic": "Your brain's best guess 1: Reaching out means more than you think",
+   "url": "https://www.facebook.com/reel/1086635857414591/",
+   "latest": {
+    "checked": "2026-10-20",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "linkedin",
+   "date": "2026-10-13",
+   "format": "single finding",
+   "topic": "How long new habits take to form",
+   "id": "urn:li:share:7515522533228711936",
+   "day7": {
+    "checked": "2026-10-20",
+    "likes": 1,
+    "comments": 0
+   },
+   "latest": {
+    "checked": "2026-10-20",
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "linkedin",
+   "date": "2026-10-15",
+   "format": "single finding",
+   "topic": "How the label for a difficulty shapes how serious it feels",
+   "id": "urn:li:share:7516247155632705536",
+   "latest": {
+    "checked": "2026-10-20",
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "linkedin",
+   "date": "2026-10-20",
+   "format": "long-form",
+   "topic": "Worry, contrast avoidance and intolerance of uncertainty",
+   "id": "urn:li:share:7518059285571026945",
+   "latest": {
+    "checked": "2026-10-20",
+    "likes": 0,
+    "comments": 0
+   }
+  }
+ ]
+}

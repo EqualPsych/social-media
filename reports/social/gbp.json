@@ -1,0 +1,8 @@
+{
+ "note": "Google Business Profile figures per location per week (Google gives profile-level numbers only, not per post). Written by the weekly tracking task. Weeks run Monday to Sunday, Melbourne time; Google's figures lag by a few days, so the last week may be revised.",
+ "locations": {
+  "Kew": "locations/7469801593432049842",
+  "Croydon": "locations/5503519399496438644"
+ },
+ "weeks": []
+}
