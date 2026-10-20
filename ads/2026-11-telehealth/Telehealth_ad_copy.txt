@@ -14,7 +14,8 @@ General information only, not psychological advice.
 
 Headline: Adult ADHD assessment by telehealth
 Button: Learn more
-Link: https://equalpsychology.com.au/services/adhd-assessment
+Link: https://equalpsychology.com.au/services/adhd-assessment?utm_source=meta&utm_medium=paid&utm_campaign=adhd-telehealth-2026-11
+(The tag at the end lets the website count visits and booking clicks from this ad. It is also shown on the admin Social tab, Ad campaigns.)
 
 SETUP (Meta Ads Manager, 7 days)
 Objective: Traffic (website visits). One ad set, upload the MP4 directly.
