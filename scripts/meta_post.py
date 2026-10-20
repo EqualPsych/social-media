@@ -248,6 +248,14 @@ def check():
     perms = api('GET', 'me', {'fields': 'id,name'})
     print(f"Token works. Instagram @{ig.get('username')} ({ig.get('followers_count')} followers); Page {page.get('name')}; "
           f"publishing used {lim.get('data', [{}])[0].get('quota_usage')} of {lim.get('data', [{}])[0].get('config', {}).get('quota_total')} in 24 hours; token belongs to {perms.get('name')}.")
+    # Can this token read Instagram reach, saves and shares? (Needs an insights permission; Meta has renamed these over
+    # time, so test the call itself rather than look for a permission name.)
+    try:
+        last = api('GET', f'{IG_USER}/media', {'fields': 'id', 'limit': '1'}).get('data', [{}])[0].get('id')
+        ins = api('GET', f'{last}/insights', {'metric': 'reach,saved,shares'}) if last else {}
+        print('Instagram insights: available (' + ', '.join(f"{m['name']} {m['values'][0]['value']}" for m in ins.get('data', [])) + ' on the latest post)')
+    except MetaError as e:
+        print('Instagram insights: not available with this token (' + str(e)[:160] + ')')
     try:
         dbg = api('GET', 'debug_token', {'input_token': TOKEN}).get('data', {})
         exp = dbg.get('expires_at')
