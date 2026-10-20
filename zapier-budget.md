@@ -35,3 +35,9 @@ come out of the same 50.
 ## Options if more is wanted
 
 A paid Zapier plan with more tasks would allow Facebook copies, companion Reels and the weekly tracking again.
+
+## Update 21 Oct 2026: Instagram and Facebook moved off Zapier
+
+The Meta token check passed (never-expiring Page token), so posting.json now routes Instagram and Facebook to the free
+GitHub workflow (meta-post.yml). Zapier now carries only LinkedIn and Google Business plus the monthly report, about
+22 calls in the 24 Oct to 23 Nov cycle. Facebook copies and the November companion Reels are back on.

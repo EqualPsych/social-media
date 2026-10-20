@@ -2,7 +2,7 @@
   "date": "2026-11-05",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "on_hold",
+  "status": "approved",
   "format": "reel",
   "companion_of": "2026-11-03",
   "share_to_feed": false,
@@ -13,6 +13,5 @@
   "video": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/companions/2026-11-05-less-harsh-short.mp4",
   "caption": "Being kinder to yourself is not always the first step.\n\nResearch on self-compassion suggests the harsh way we treat ourselves is more closely linked with distress than the kind side. Turning that harsh voice down can be its own step, and for many people a more reachable one.\n\nThe short version of this week's carousel. The full carousel is on our profile @equal_psychology, and the full article is linked in bio.\n\nSources:\nMuris, P., & Petrocchi, N. (2017). Protection or vulnerability? A meta-analysis of the relations between the positive and negative components of self-compassion and psychopathology. Clinical Psychology & Psychotherapy. https://doi.org/10.1002/cpp.2005\nChio, F. H. N., Mak, W. W. S., & Yu, B. C. L. (2021). Meta-analytic review on the differential effects of self-compassion components on well-being and psychological distress. Clinical Psychology Review. https://doi.org/10.1016/j.cpr.2021.101986\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #selfcompassion #innercritic #selfcriticism #psychologymelbourne",
   "music": "marimba",
-  "voice": "annalise",
-  "hold_reason": "Paused to stay within the Zapier task limit (an off-grid companion Reel takes about 6 calls). Zapier free plan: 100 tasks (50 calls) a month, renewing on the 23rd. See zapier-budget.md."
+  "voice": "annalise"
 }

@@ -15,7 +15,5 @@
       "from": "2026-10-28",
       "reason": "Zapier task limit reached until 23 Oct 2026 renewal"
     }
-  ],
-  "facebook_mirror": false,
-  "facebook_mirror_note": "Facebook copy skipped this month to stay within the Zapier task limit. Zapier free plan: 100 tasks (50 calls) a month, renewing on the 23rd. See zapier-budget.md."
+  ]
 }
