@@ -1,0 +1,43 @@
+name: Build social dashboard
+
+# Rebuilds reports/social/dashboard.json (read by equalpsychology.com.au/admin/social) whenever a queue file or a
+# report changes, and makes a small poster frame for any new Reel video so the dashboard can show it.
+
+on:
+  push:
+    branches: [main]
+    paths: ['instagram-queue/**', 'linkedin-queue/**', 'gbp-queue/**', 'reports/social/interactions.json', 'reports/social/gbp.json', 'instagram/**/*.mp4', 'scripts/build_dashboard.py']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-dashboard
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Poster frames for new videos
+        run: |
+          set -euo pipefail
+          missing=$(find instagram ads -name '*.mp4' | while read -r v; do [ -f "${v%.mp4}.thumb.jpg" ] || echo "$v"; done)
+          if [ -z "$missing" ]; then echo "No new videos"; exit 0; fi
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          echo "$missing" | while read -r v; do ffmpeg -loglevel error -y -ss 1 -i "$v" -frames:v 1 -vf scale=270:-2 -q:v 5 "${v%.mp4}.thumb.jpg"; echo "Poster for $v"; done
+
+      - name: Build dashboard.json
+        run: python3 scripts/build_dashboard.py
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add reports/social/dashboard.json instagram ads || true
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Rebuild social dashboard"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done; exit 1
