@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T19:46:46Z",
+ "generated": "2026-10-21T19:47:04Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -300,7 +300,7 @@
    "platform": "facebook",
    "status": "posted",
    "posted_at": "2026-10-21T20:18:32+11:00",
-   "url": null,
+   "url": "https://www.facebook.com/117619581441312_122330928740026884",
    "held_reason": null,
    "interactions": null
   },

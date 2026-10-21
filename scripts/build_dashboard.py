@@ -109,6 +109,8 @@ def main():
         fb_status = fb.get('status') or ('held' if d.get('status') == 'held' else d.get('status'))
         if fb_status == 'posted' or d.get('status') in ('approved', 'pending_review', 'held') or fb:
             fb_url = fb.get('id_or_url')
+            if re.fullmatch(r'\d+_\d+', str(fb_url or '')):
+                fb_url = 'https://www.facebook.com/' + fb_url   # Meta route records the post id
             if not str(fb_url or '').startswith('http'):
                 fb_url = (counts('facebook', ds) or {}).get('url')
             posts.append({**base, 'platform': 'facebook', 'status': fb_status, 'posted_at': fb.get('posted_at'), 'url': fb_url,
