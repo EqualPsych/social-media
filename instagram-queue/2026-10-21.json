@@ -2,7 +2,7 @@
   "date": "2026-10-21",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "carousel",
   "topic": "Meaning in your twenties (carousel)",
   "blog_url": "https://equalpsychology.com.au/blog/searching-for-meaning-in-your-twenties",
@@ -27,5 +27,14 @@
       "reason": "Back to its original date: Instagram and Facebook now post through Meta, not Zapier"
     }
   ],
-  "slot": "evening"
+  "slot": "evening",
+  "posted_at": "2026-10-21T20:18:15+11:00",
+  "posted_url": "https://www.instagram.com/p/DewEV-nnTkG/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-10-21T20:18:32+11:00",
+    "id_or_url": "117619581441312_122330928740026884",
+    "via": "meta"
+  }
 }
