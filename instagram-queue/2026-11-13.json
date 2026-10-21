@@ -17,5 +17,9 @@
     "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/adhd-series/2026-11-13-lookalikes-7.png",
     "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/adhd-series/2026-11-13-lookalikes-8.png"
   ],
-  "facebook_link_line": "Learn more about our adult ADHD assessment: https://equalpsychology.com.au/services/adhd-assessment"
+  "facebook_link_line": "Learn more about our adult ADHD assessment: https://equalpsychology.com.au/services/adhd-assessment",
+  "cover": "paper",
+  "redesigned": [
+    "2026-10-22: rebuilt to the 3 Nov / 11 Nov standard (pill, larger type, centred, yellow call-out) and the colour rotation; wording unchanged."
+  ]
 }

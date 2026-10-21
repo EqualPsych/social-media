@@ -19,5 +19,9 @@
       "from": "2026-10-31",
       "reason": "Back to its original date: Instagram and Facebook now post through Meta, not Zapier"
     }
+  ],
+  "cover": "paper",
+  "redesigned": [
+    "2026-10-22: rebuilt to the 3 Nov / 11 Nov standard (pill, larger type, centred, yellow call-out) and the colour rotation; wording unchanged."
   ]
 }
