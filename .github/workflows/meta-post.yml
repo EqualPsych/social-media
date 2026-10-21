@@ -54,3 +54,15 @@ jobs:
           else
             python3 scripts/meta_post.py
           fi
+
+      # Commits made with the built-in GitHub token do not start other workflows, so the dashboard rebuild
+      # ("Build social dashboard") never runs after a Meta post. Rebuild it here so the admin Social tab shows the tick.
+      - name: Rebuild dashboard
+        if: always()
+        run: |
+          git pull --rebase -q || true
+          python3 scripts/build_dashboard.py
+          git add reports/social/dashboard.json
+          if git diff --cached --quiet; then echo "Dashboard already current"; exit 0; fi
+          git commit -m "Rebuild social dashboard (after Meta post)"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done; exit 1
