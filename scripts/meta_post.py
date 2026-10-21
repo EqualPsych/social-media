@@ -275,8 +275,9 @@ def main():
         return check()
     now = datetime.now(MEL)
     # The workflow fires twice for each slot (one hour apart, so daylight saving is covered); the window takes the first
-    # run at or after 8:22am and 7:52pm, and the second finds the post already recorded.
-    slot = a.slot or ('morning' if 8 <= now.hour < 10 else 'evening' if 19 <= now.hour < 21 else None)
+    # run at or after 8:22am and 7:52pm, and the second finds the post already recorded. GitHub can start scheduled runs
+    # half an hour or more late, so the windows run to noon and midnight.
+    slot = a.slot or ('morning' if 8 <= now.hour < 12 else 'evening' if 19 <= now.hour < 24 else None)
     if not slot:
         print(f'Not a posting window ({now:%H:%M} Melbourne).'); return 0
     return run(a.date or now.strftime('%Y-%m-%d'), slot)
