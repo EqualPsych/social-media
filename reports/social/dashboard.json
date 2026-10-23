@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T22:41:43Z",
+ "generated": "2026-10-23T22:47:58Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1745,6 +1745,31 @@
    "blog_url": "https://equalpsychology.com.au/blog/grief-at-christmas-prolonged-grief",
    "held_reason": null,
    "source": "gbp-queue/2026-12-08.json",
+   "interactions": null
+  },
+  {
+   "date": "2026-12-10",
+   "weekday": "Thursday",
+   "topic": "Grief at Christmas (companion Reel, off grid, still frames)",
+   "hook": "Most of us carry a timetable for grief. By the first Christmas, there is often a quiet sense that things should be settling.",
+   "format": "reel",
+   "kind": "Companion Reel",
+   "series": null,
+   "cover": "teal",
+   "voice": "david",
+   "music": "guitar",
+   "slot": "morning",
+   "companion_of": "2026-12-08",
+   "experiment": null,
+   "experiment_note": null,
+   "blog_url": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/companions/2026-12-10-grief-short.thumb.jpg",
+   "source": "instagram-queue/2026-12-10.json",
+   "platform": "instagram",
+   "status": "pending_review",
+   "posted_at": null,
+   "url": null,
+   "held_reason": null,
    "interactions": null
   },
   {
