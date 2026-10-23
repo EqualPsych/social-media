@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T21:51:07Z",
+ "generated": "2026-10-23T21:49:45Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -373,9 +373,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-10/2026-10-24-chronic-stress-single/post.png",
    "source": "instagram-queue/2026-10-24.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-10-24T08:49:39+11:00",
+   "url": "https://www.instagram.com/p/De2j71UF-c_/",
    "held_reason": null,
    "interactions": null
   },
@@ -398,9 +398,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-10/2026-10-24-chronic-stress-single/post.png",
    "source": "instagram-queue/2026-10-24.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-10-24T08:49:44+11:00",
+   "url": "https://www.facebook.com/117619581441312_122331293792026884",
    "held_reason": null,
    "interactions": null
   },
