@@ -2,7 +2,7 @@
   "date": "2026-10-24",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "single",
   "topic": "Chronic stress and the brain (single)",
   "blog_url": "https://equalpsychology.com.au/blog/chronic-stress-and-the-brain",
@@ -13,5 +13,14 @@
   "cover": "midnight",
   "redesigned": [
     "2026-10-22: rebuilt to the 3 Nov / 11 Nov standard (pill, larger type, centred, yellow call-out) and the colour rotation; wording unchanged."
-  ]
+  ],
+  "posted_at": "2026-10-24T08:49:39+11:00",
+  "posted_url": "https://www.instagram.com/p/De2j71UF-c_/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-10-24T08:49:44+11:00",
+    "id_or_url": "117619581441312_122331293792026884",
+    "via": "meta"
+  }
 }
