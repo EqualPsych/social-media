@@ -1,7 +1,8 @@
 """Feed redesign, 22 Oct 2026. Rebuilds upcoming carousels and singles to the standard Matt picked
 (3 Nov carousel cover and 11 Nov single): topic pill, large headline, content centred on the page,
 one yellow call-out word, and the skill's colour rotation (Section 4). Wording is unchanged.
-<em>..</em> in a headline marks the call-out."""
+<em>..</em> in a headline marks the call-out.
+24 Oct 2026: 12 and 20 Dec singles reworded to drop the repeated "is not X. It is Y." opening (audit against the updated skills)."""
 import sys, os, re
 sys.path.insert(0, '/home/claude/ig')
 from common import FONTS, white_b64, primary_b64, HANDLE
@@ -409,10 +410,10 @@ S = {
                          "That is why fog, forgetfulness and low mood arrive together. They come from the same overloaded system, and they tend to ease as the load comes down.", 86),
     '2026-10-28': single(CR, 'Meaning in your 20s', "Searching for meaning is not the problem. Searching without <em>a sense of control</em> is.",
                          "The questioning is human and healthy. It only tips into distress when it comes with the feeling that your choices do not count.", 92),
-    '2026-12-12': single(TL, 'Grief at Christmas', "The question is not whether it still hurts. It is whether it is <em>still moving.</em>",
+    '2026-12-12': single(TL, 'Grief at Christmas', "Whether grief is <em>still moving</em> matters more than whether it still hurts.",
                          "Intensity on one day tells you little. What matters is the shape of grief across months.", 96),
-    '2026-12-20': single(TL, 'Grief at Christmas', "Grief at Christmas is not a problem to fix. It is part of <em>still loving someone.</em>",
-                         "It does not need a solution. It needs a little room at the table.", 88, split=CR),
+    '2026-12-20': single(TL, 'Grief at Christmas', "Grief at Christmas is part of <em>still loving someone.</em>",
+                         "What it needs is a little room at the table.", 100, split=CR),
 }
 
 for d, slides in P.items():
