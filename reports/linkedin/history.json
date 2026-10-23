@@ -1,0 +1,6 @@
+{
+  "note": "LinkedIn company page (Equal Psychology, 92615474) figures parsed from the monthly analytics export that Matt saves to the Google Drive folder 'EP LinkedIn analytics exports' (id 18-v9EKOHFpC2T_jG2_6jQsOlqfchh_-q). Written by the monthly social report. 'posts': one record per post, keyed by date and the first 80 characters of the text, holding impressions, clicks, reactions, comments, reposts and engagement_rate as the export gives them, plus 'goal' and 'format' from the matching linkedin-queue file. 'followers': {date, total, new_in_window}. The export's top-post tables are a selected sample, not every post; unknown values are null, never 0.",
+  "exports_read": [],
+  "posts": [],
+  "followers": []
+}
