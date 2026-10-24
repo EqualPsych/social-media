@@ -2,7 +2,7 @@
   "date": "2026-10-25",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "reel",
   "goal": "share",
   "topic": "Your brain's best guess 2: Deep talk is less awkward than you expect",
@@ -14,5 +14,14 @@
   "cover": "teal",
   "redesigned": [
     "2026-10-22: hook frame colour rotated; text, voiceover and music unchanged."
-  ]
+  ],
+  "posted_at": "2026-10-25T08:47:17+11:00",
+  "posted_url": "https://www.instagram.com/reel/De5IZqhCeJV/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-10-25T08:47:23+11:00",
+    "id_or_url": "1866153707704401",
+    "via": "meta"
+  }
 }
