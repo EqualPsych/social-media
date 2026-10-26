@@ -1,7 +1,15 @@
 {
- "generated": "2026-10-26T22:08:33Z",
+ "generated": "2026-10-26T22:43:06Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
+  {
+   "date": "2026-10-09",
+   "instagram": 41
+  },
+  {
+   "date": "2026-10-12",
+   "instagram": 41
+  },
   {
    "date": "2026-10-20",
    "instagram": 41,

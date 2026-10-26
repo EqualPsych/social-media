@@ -62,6 +62,30 @@ def kind_of(d):
     return {'carousel': 'Carousel', 'single': 'Single image'}.get(f, (d.get('format') or 'Post').capitalize())
 
 
+def follower_history(inter):
+    """One list of follower totals by date, from every place they are recorded: the weekly Meta workflow and the
+    monthly report (interactions.json), the Instagram snapshots (reports/instagram/history.json) and the LinkedIn
+    analytics exports (reports/linkedin/history.json). A value already recorded for a date and platform is kept."""
+    by = {}
+
+    def put(ds, platform, n):
+        if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(ds or '')) or not isinstance(n, int) or n < 0:
+            return
+        by.setdefault(ds, {'date': ds}).setdefault(platform, n)
+
+    for r in inter.get('followers', []):
+        for k in ('instagram', 'facebook', 'linkedin'):
+            put(r.get('date'), k, r.get(k))
+    for path, key, field in (('reports/instagram/history.json', 'instagram', 'followers'), ('reports/linkedin/history.json', 'linkedin', 'total')):
+        if os.path.exists(os.path.join(ROOT, path)):
+            d = load(path)
+            rows = [r for k in ('snapshots', 'followers') if isinstance(d.get(k), list) for r in d[k]]
+            for r in rows:
+                if isinstance(r, dict):
+                    put(r.get('date'), key, r.get(field))
+    return [by[k] for k in sorted(by)]
+
+
 def weekday(ds):
     return date.fromisoformat(ds).strftime('%A')
 
@@ -139,7 +163,7 @@ def main():
     out = {
         'generated': datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z'),
         'note': 'Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.',
-        'followers': inter.get('followers', []),
+        'followers': follower_history(inter),
         'unavailable': ['Instagram reach, saves and shares (the Instagram connection has no insights permission)',
                         'LinkedIn impressions', 'Google Business figures per post (Google gives whole-profile numbers only)'],
         'posts': posts,

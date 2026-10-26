@@ -1,0 +1,40 @@
+name: Record follower totals (weekly)
+
+# Every Monday morning (8:13am Melbourne in summer time, 7:13am in winter time) records the Instagram and Facebook Page
+# follower totals through Meta's API (free, no Zapier tasks), then rebuilds the dashboard so the website's admin Social
+# tab can show followers gained or lost week by week. Added 27 Oct 2026. Can also be run by hand.
+on:
+  schedule:
+    - cron: '13 21 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: followers-weekly
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+      - name: Record followers
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+        run: python3 scripts/record_followers.py
+      # Commits made with the built-in GitHub token do not start other workflows, so rebuild the dashboard here.
+      - name: Rebuild dashboard and save
+        if: always()
+        run: |
+          python3 scripts/build_dashboard.py
+          git add reports/social/interactions.json reports/social/dashboard.json
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Record weekly follower totals"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done; exit 1
