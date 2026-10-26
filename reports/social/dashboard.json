@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T21:47:24Z",
+ "generated": "2026-10-26T22:08:33Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -157,8 +157,11 @@
    "format": "Google post",
    "kind": "Google post",
    "slot": "morning",
-   "status": "held",
-   "locations": {},
+   "status": "posted",
+   "locations": {
+    "Kew": "posted",
+    "Croydon": "posted"
+   },
    "url": "https://equalpsychology.com.au/blog/chronic-stress-and-the-brain",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2026-10/2026-10-17-chronic-stress.png",
    "blog_url": "https://equalpsychology.com.au/blog/chronic-stress-and-the-brain",
@@ -463,8 +466,11 @@
    "format": "Google post",
    "kind": "Google post",
    "slot": "morning",
-   "status": "approved",
-   "locations": {},
+   "status": "posted",
+   "locations": {
+    "Kew": "posted",
+    "Croydon": "posted"
+   },
    "url": "https://equalpsychology.com.au/blog/searching-for-meaning-in-your-twenties",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2026-10/2026-10-21-meaning.png",
    "blog_url": "https://equalpsychology.com.au/blog/searching-for-meaning-in-your-twenties",
@@ -481,9 +487,9 @@
    "format": "single finding",
    "kind": "Single finding",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-10-27T09:07:39+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7520607098112483328/",
    "thumb": null,
    "held_reason": null,
    "source": "linkedin-queue/2026-10-27.json",
