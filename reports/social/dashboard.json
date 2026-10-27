@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T04:34:05Z",
+ "generated": "2026-10-27T21:23:55Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -567,9 +567,9 @@
    "format": "research graphic",
    "kind": "Research graphic",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-10-28T08:23:30+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7520958376588197889/",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-10/2026-10-22-double-empathy.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-10-28.json",
