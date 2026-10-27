@@ -2,7 +2,7 @@
   "date": "2026-10-28",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "single",
   "goal": "share",
   "topic": "Meaning in your twenties (single)",
@@ -24,5 +24,14 @@
   "cover": "paper",
   "redesigned": [
     "2026-10-22: rebuilt to the 3 Nov / 11 Nov standard (pill, larger type, centred, yellow call-out) and the colour rotation; wording unchanged."
-  ]
+  ],
+  "posted_at": "2026-10-28T08:52:51+11:00",
+  "posted_url": "https://www.instagram.com/p/DfA3eJoFfUi/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-10-28T08:52:56+11:00",
+    "id_or_url": "117619581441312_122331882956026884",
+    "via": "meta"
+  }
 }
