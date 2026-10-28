@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T19:47:56Z",
+ "generated": "2026-10-28T19:50:30Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1048,7 +1048,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-10-demoralization.png",
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-10-self-criticism.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-10.json",
    "interactions": null
