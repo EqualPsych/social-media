@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T21:23:30Z",
+ "generated": "2026-10-28T21:57:25Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -610,9 +610,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-10-29-cyclic-sighing.thumb.jpg",
    "source": "instagram-queue/2026-10-29.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-10-29T08:57:17+11:00",
+   "url": "https://www.instagram.com/reel/DfDcspwiCOE/",
    "held_reason": null,
    "interactions": null
   },
@@ -636,8 +636,8 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-10-29-cyclic-sighing.thumb.jpg",
    "source": "instagram-queue/2026-10-29.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
+   "status": "posted",
+   "posted_at": "2026-10-29T08:57:23+11:00",
    "url": null,
    "held_reason": null,
    "interactions": null
