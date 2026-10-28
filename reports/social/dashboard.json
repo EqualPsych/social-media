@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T21:52:58Z",
+ "generated": "2026-10-28T19:47:56Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -637,7 +637,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-10/2026-10-29-emotion-regulation.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-10-29.json",
    "interactions": null
@@ -804,7 +804,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-02-in-practice-10.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-02.json",
    "interactions": null
@@ -931,7 +931,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-05-safety-behaviours.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-05.json",
    "interactions": null
@@ -1048,7 +1048,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-10-demoralization.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-10.json",
    "interactions": null
@@ -1115,7 +1115,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-12-self-compassion-views.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-12.json",
    "interactions": null
@@ -1307,7 +1307,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-17-perimenopause.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-17.json",
    "interactions": null
@@ -1367,7 +1367,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-19-insomnia.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-19.json",
    "interactions": null
@@ -1551,7 +1551,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-26-loneliness.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-26.json",
    "interactions": null
@@ -1693,7 +1693,7 @@
    "status": "approved",
    "posted_at": null,
    "url": null,
-   "thumb": null,
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-12/2026-12-01-in-practice-11.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-12-01.json",
    "interactions": null
