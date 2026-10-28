@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T20:27:58Z",
+ "generated": "2026-10-28T21:23:30Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -651,9 +651,9 @@
    "format": "single finding",
    "kind": "Single finding",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-10-29T08:23:15+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7521320659390550016/",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-10/2026-10-29-emotion-regulation.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-10-29.json",
