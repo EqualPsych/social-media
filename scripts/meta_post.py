@@ -202,6 +202,12 @@ def run(date, slot):
     if not (ig_on or fb_on):
         print('posting.json does not route Instagram or Facebook to Meta yet; nothing to do.')
         return 0
+    # A queued run checks out the commit it was started on. Read the latest queue so a post changed or posted from the
+    # admin page in the meantime (moved, held, or sent with "Post now") is not posted again.
+    try:
+        git('pull', '--rebase', '-q')
+    except subprocess.CalledProcessError as e:
+        print(f'Could not update the checkout first: {e.stderr.strip()[:200]}')
     path = os.path.join(ROOT, 'instagram-queue', f'{date}.json')
     if not os.path.exists(path):
         print(f'{date}: no Instagram file.'); return 0

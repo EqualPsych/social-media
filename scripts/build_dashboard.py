@@ -116,7 +116,7 @@ def main():
             'format': d.get('format'), 'kind': kind_of(d), 'series': series_of(topic), 'cover': d.get('cover'),
             'voice': d.get('voice'), 'music': d.get('music'), 'slot': d.get('slot') or 'morning',
             'companion_of': d.get('companion_of'), 'experiment': d.get('experiment'), 'experiment_note': d.get('experiment_note'),
-            'blog_url': d.get('blog_url'), 'thumb': thumb_for(d), 'source': 'instagram-queue/' + os.path.basename(f),
+            'blog_url': d.get('blog_url'), 'facebook_mirror': d.get('facebook_mirror'), 'thumb': thumb_for(d), 'source': 'instagram-queue/' + os.path.basename(f),
         }
         pid = None
         if d.get('posted_url'):
