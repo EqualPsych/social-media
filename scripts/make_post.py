@@ -198,10 +198,14 @@ def run(date, platforms, scheduled):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--date'); ap.add_argument('--platform', choices=['linkedin', 'gbp', 'all'], default='all')
+    ap.add_argument('--date'); ap.add_argument('--platform', choices=['linkedin', 'gbp', 'all', 'check'], default='all')
     a = ap.parse_args()
     if not HOOK:
         print('MAKE_POST_WEBHOOK is not set yet; nothing to do.'); return 0
+    if a.platform == 'check':
+        # Reaches the scenario with a platform no route takes, so nothing is posted. Make replies "Accepted".
+        ok, lines = call_make({'platform': 'check', 'text': 'connection check, posts nothing'})
+        print('Make webhook check:', ' '.join(lines)[:200]); return 0 if lines[:1] == ['Accepted'] else 1
     platforms = ['linkedin', 'gbp'] if a.platform == 'all' else [a.platform]
     if a.date:
         return run(a.date, platforms, scheduled=False)
