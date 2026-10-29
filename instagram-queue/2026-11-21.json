@@ -1,0 +1,16 @@
+{
+  "platform": "instagram",
+  "account": "@equal_psychology",
+  "status": "pending_review",
+  "format": "reel",
+  "blog_url": null,
+  "date": "2026-11-21",
+  "goal": "save",
+  "cover": "butter",
+  "topic": "Stress Tools 1: Tense and release (progressive muscle relaxation taster)",
+  "video": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-21-tense-and-release.mp4",
+  "voice": "annalise",
+  "music": "guitar",
+  "caption": "Quick check. Are your shoulders up near your ears right now?\n\nProgressive muscle relaxation means tensing a muscle group on purpose, letting it go, and noticing the difference. A recent systematic review of studies with adults found it was linked with lower stress in most of the studies it included. Some studies found no change, many were small, and the sessions studied ran for several minutes, so this Reel is a short taster.\n\nHow to try it: lift your shoulders towards your ears and hold for a few seconds, then let them drop. Make two fists and squeeze, then let go. Notice how your hands and shoulders feel. Go gently, skip any area that is injured or painful, and stop if anything hurts.\n\nSave this for a tense moment.\n\nResearch:\nMuhammad Khir, S., Wan Mohd Yunus, W. M. A., Mahmud, N., Wang, R., Panatik, S. A., Mohd Sukor, M. S., & Nordin, N. A. (2024). Efficacy of progressive muscle relaxation in adults for stress, anxiety, and depression: A systematic review. Psychology Research and Behavior Management, 17, 345-365. https://doi.org/10.2147/PRBM.S437277\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #stressmanagement #musclerelaxation #psychologymelbourne #stresstools",
+  "build_note": "Stress Tools series (orb template, butter ground for cover rotation; /root/reel/series/pmr.py). Paper read in full from Drive. CTA is save/follow because the app muscle relaxation space shows Coming soon on /apps. Matt asked for a quick-tools stress series (29 Oct 2026)."
+}
