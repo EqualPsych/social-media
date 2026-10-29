@@ -1,0 +1,62 @@
+name: Post to LinkedIn and Google Business (Make)
+
+# Free route for LinkedIn and the Kew and Croydon Google Business Profiles (29 Oct 2026). Sends the queue file to the
+# Make scenario "EP social posting (LinkedIn and Google Business)" through its webhook (repository secret
+# MAKE_POST_WEBHOOK), then records the result in the queue file.
+# - Scheduled: 8:22am Melbourne in summer and winter time; posts only platforms that posting.json routes to "make".
+# - Dispatched by the website's admin Social tab ("Post now"): posts the named file whatever posting.json says.
+on:
+  schedule:
+    - cron: '22 21 * * *'
+    - cron: '22 22 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Queue date to post (YYYY-MM-DD). Leave empty for the scheduled behaviour.'
+        required: false
+      platform:
+        description: 'linkedin, gbp or all'
+        required: false
+        default: 'all'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: make-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+      - name: Post
+        env:
+          MAKE_POST_WEBHOOK: ${{ secrets.MAKE_POST_WEBHOOK }}
+          IN_DATE: ${{ inputs.date }}
+          IN_PLATFORM: ${{ inputs.platform }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "$IN_DATE" ]; then
+            case "$IN_DATE" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;; *) echo "Bad date"; exit 1;; esac
+            case "$IN_PLATFORM" in linkedin|gbp|all|"") ;; *) echo "Bad platform"; exit 1;; esac
+            python3 scripts/make_post.py --date "$IN_DATE" --platform "${IN_PLATFORM:-all}"
+          else
+            python3 scripts/make_post.py
+          fi
+
+      # Commits made with the built-in GitHub token do not start other workflows, so rebuild the dashboard here.
+      - name: Rebuild dashboard
+        if: always()
+        run: |
+          git pull --rebase -q || true
+          python3 scripts/build_dashboard.py
+          git add reports/social/dashboard.json
+          if git diff --cached --quiet; then echo "Dashboard already current"; exit 0; fi
+          git commit -m "Rebuild social dashboard (after Make post)"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done; exit 1

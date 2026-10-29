@@ -34,8 +34,8 @@ def main():
             if q == 'instagram-queue':
                 n = 0 if route.get('instagram') == 'meta' else (7 if d.get("share_to_feed") is False else 1)
                 n += 0 if d.get('facebook_mirror') is False or route.get('facebook') == 'meta' else 1
-            elif q == 'linkedin-queue': n = 1
-            else: n = len(d.get('locations') or {})
+            elif q == 'linkedin-queue': n = 0 if route.get('linkedin') in ('meta', 'make') else 1
+            else: n = 0 if route.get('gbp') in ('meta', 'make') else len(d.get('locations') or {})
             c = C.setdefault(cycle(d['date']), {'posts': 0, 'calls': 0})
             c['posts'] += 1; c['calls'] += n
     bad = False
