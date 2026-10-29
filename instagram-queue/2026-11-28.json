@@ -1,7 +1,7 @@
 {
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "reel",
   "blog_url": null,
   "date": "2026-11-28",
@@ -12,5 +12,5 @@
   "voice": "david",
   "music": "ambient",
   "caption": "If work keeps following you home, try ending your workday on purpose.\n\nResearchers call switching off from work in your own time psychological detachment. A review of workplace programmes found the ones that worked better often built a clear boundary between work and home. Another review pointed to simple end-of-day habits: planning unfinished tasks, noting what went well, and putting work messages away.\n\nHow to try it at the end of today:\n1. Write down what is unfinished, and when you will come back to it.\n2. Name one thing that went well.\n3. Close the laptop and mark the end. Wash your cup, or step outside.\n\nSwitching off is harder with heavy workloads, or when you are expected to stay reachable. That is not a personal failing, and it is worth raising at work.\n\nSave this for the end of your next workday.\n\nResearch:\nAgolli, A., & Holtz, B. C. (2023). Facilitating detachment from work: A systematic review, evidence-based recommendations, and guide for future research. Journal of Occupational Health Psychology, 28(3), 129-159. https://doi.org/10.1037/ocp0000353\nKarabinski, T., Haun, V. C., Nübold, A., Wendsche, J., & Wegge, J. (2021). Interventions for improving psychological detachment from work: A meta-analysis. Journal of Occupational Health Psychology, 26(3), 224-242. https://doi.org/10.1037/ocp0000280\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #stressmanagement #worklifebalance #psychologymelbourne #stresstools",
-  "build_note": "Stress Tools series (orb template, cream ground; /root/reel/series/switchoff.py). Both papers read in full from Drive. Matt asked for a quick-tools stress series (29 Oct 2026)."
+  "build_note": "Stress Tools series (orb template, cream ground; /root/reel/series/switchoff.py). Both papers read in full from Drive. Matt asked for a quick-tools stress series (29 Oct 2026). Approved by Matt 29 Oct 2026."
 }
