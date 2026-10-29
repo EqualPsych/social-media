@@ -2,7 +2,7 @@
   "date": "2026-12-19",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "reel",
   "goal": "save",
   "cover": "paper",
@@ -12,5 +12,5 @@
   "voice": "david",
   "music": "marimba",
   "caption": "When you're stressed, how do you speak to yourself?\n\nSelf-compassion means meeting your own hard moments with the kindness you would give a friend. A meta-analysis of trials found programmes that taught it over several weeks were linked with less stress than having no programme. They did about as well as other approaches, like relaxation training, not better, and many of the studies had quality problems.\n\nMany of these programmes used a short practice called a self-compassion break:\n1. Name it. \"This is a hard moment.\"\n2. Remember you're not alone. Other people feel this too.\n3. Offer yourself a kind word, the way you would a friend. \"What do I need right now?\"\n\nThis is a taster, and the programmes ran for weeks. If self-criticism feels heavy, talking it through with a psychologist is an option.\n\nSave this for a hard day.\n\nResearch:\nHan, A., & Kim, T. H. (2023). Effects of self-compassion interventions on reducing depressive symptoms, anxiety, and stress: A meta-analysis. Mindfulness, 14(7). https://doi.org/10.1007/s12671-023-02148-x\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #stressmanagement #selfcompassion #psychologymelbourne #stresstools",
-  "build_note": "Stress Tools series (orb template, cream ground; /root/reel/series/selfcomp.py). Paper read in full from Drive. Page range of the Han & Kim citation not yet confirmed (volume, issue and DOI verified). Matt approved the series and asked to proceed (29 Oct 2026)."
+  "build_note": "Stress Tools series (orb template, cream ground; /root/reel/series/selfcomp.py). Paper read in full from Drive. Page range of the Han & Kim citation not yet confirmed (volume, issue and DOI verified). Matt approved the series and asked to proceed (29 Oct 2026). Approved by Matt 30 Oct 2026."
 }
