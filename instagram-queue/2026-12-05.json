@@ -2,7 +2,7 @@
   "date": "2026-12-05",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "reel",
   "goal": "save",
   "cover": "butter",
@@ -12,5 +12,5 @@
   "voice": "david",
   "music": "marimba",
   "caption": "Feel like you can't afford a break? A short one may cost less than you think.\n\nResearchers call breaks of ten minutes or less micro-breaks. A review of experiments found people who took them felt more energetic and less tired afterwards. On the whole, their work didn't suffer. Breaks didn't clearly help after mentally demanding tasks, though longer breaks did more.\n\nHow to try it at your next pause between tasks:\n1. Stop, and step away from the screen.\n2. Do something unrelated. Stretch, get a drink, or look outside.\n3. Give it a few minutes, up to ten. Then go back.\n\nThese were mostly short studies, and people rated how they felt. If breaks feel impossible where you work, that is worth raising.\n\nSave this for your next long stretch at the desk.\n\nResearch:\nAlbulescu, P., Macsinga, I., Rusu, A., Sulea, C., Bodnaru, A., & Tulbure, B. T. (2022). \"Give me a break!\" A systematic review and meta-analysis on the efficacy of micro-breaks for increasing well-being and performance. PLoS ONE, 17(8), e0272460. https://doi.org/10.1371/journal.pone.0272460\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #stressmanagement #workbreaks #psychologymelbourne #stresstools",
-  "build_note": "Stress Tools series (orb template, butter ground for cover rotation; /root/reel/series/microbreak.py). Paper read in full from Drive. Matt approved the series and asked to proceed (29 Oct 2026)."
+  "build_note": "Stress Tools series (orb template, butter ground for cover rotation; /root/reel/series/microbreak.py). Paper read in full from Drive. Matt approved the series and asked to proceed (29 Oct 2026). Approved by Matt 29 Oct 2026."
 }
