@@ -1,0 +1,16 @@
+{
+  "date": "2027-01-09",
+  "platform": "instagram",
+  "account": "@equal_psychology",
+  "status": "pending_review",
+  "format": "reel",
+  "goal": "save",
+  "cover": "paper",
+  "topic": "Stress Tools 6: Worry time (worry postponement)",
+  "blog_url": null,
+  "video": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2027-01-09-worry-time.mp4",
+  "voice": "david",
+  "music": "piano",
+  "caption": "Worries showing up all day? Try giving them an appointment.\n\nIt's called worry postponement: you notice a worry, and save it for a set time later in the day. In a small trial with people diagnosed with generalised anxiety, learning this over two sessions was linked with less worry than waiting, and it held a month later. It helped less for health worries, and it was taught by therapists, so this is a simplified version.\n\nHow to try it today:\n1. Pick a worry time later today, up to thirty minutes.\n2. When a worry shows up, notice it. \"I acknowledge it, and now I let it go,\" until later.\n3. At your worry time, come back to it, if you still want to.\n\nDon't try to force worries away. If worry is taking over your days, talking it through with a psychologist is an option.\n\nSave this for a busy mind.\n\nResearch:\nKrzikalla, C., Buhlmann, U., Schug, J., Kopei, I., Gerlach, A. L., Doebler, P., Morina, N., & Andor, T. (2024). Worry postponement from the metacognitive perspective: A randomized waitlist-controlled trial. Clinical Psychology in Europe, 6(2), Article e12741. https://doi.org/10.32872/cpe.12741\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #stressmanagement #worry #psychologymelbourne #stresstools",
+  "build_note": "Stress Tools series (post box with a clock visual concept; /root/reel/series/worry.py). Paper read in full from Drive. Evidence is a small clinical (GAD) trial; Dippel et al. (2023) meta-analysis on everyday worry not yet in Drive. 30 Oct 2026."
+}
