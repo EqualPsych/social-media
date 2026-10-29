@@ -2,7 +2,7 @@
   "date": "2026-10-30",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "reel",
   "goal": "follow",
   "topic": "ADHD: the full picture, missed",
@@ -15,5 +15,14 @@
   "cover": "butter",
   "redesigned": [
     "2026-10-22: hook frame colour rotated; text, voiceover and music unchanged."
-  ]
+  ],
+  "posted_at": "2026-10-30T08:59:04+11:00",
+  "posted_url": "https://www.instagram.com/reel/DfGBuqFAJjx/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-10-30T08:59:08+11:00",
+    "id_or_url": "2485392125285904",
+    "via": "meta"
+  }
 }
