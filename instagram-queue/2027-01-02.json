@@ -1,0 +1,16 @@
+{
+  "date": "2027-01-02",
+  "platform": "instagram",
+  "account": "@equal_psychology",
+  "status": "pending_review",
+  "format": "reel",
+  "goal": "save",
+  "cover": "butter",
+  "topic": "Stress Tools 5: One small thing that matters (values)",
+  "blog_url": null,
+  "video": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2027-01-02-one-small-thing.mp4",
+  "voice": "annalise",
+  "music": "ambient",
+  "caption": "Stressed, and the things you care about keep slipping? Try one small thing that matters.\n\nPsychologists call this values clarification: naming what matters to you, and why. A recent systematic review of trials found it was often linked with better mood and a stronger sense of meaning. The benefits were more consistent when people acted on their values, not just thought about them. On its own, it didn't ease anxiety or low mood.\n\nHow to try it today:\n1. Pick one value that matters to you. Connection, health, learning, or kindness.\n2. Say in one sentence why it matters.\n3. Choose one small action today that fits it. A text to a friend, or a ten-minute walk.\n\nMany of the studies were low quality. If stress is wearing you down, talking it through with a psychologist is an option.\n\nSave this for a crowded week.\n\nResearch:\nNapier, A. D., & Mangat, A. (2026). The well-being and ill-being impacts of values clarification: A systematic review of randomised controlled trials. The Journal of Positive Psychology. Advance online publication. https://doi.org/10.1080/17439760.2026.2714053\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #stressmanagement #values #psychologymelbourne #stresstools",
+  "build_note": "Stress Tools series (orb template, butter ground; compass visual concept per Matt asking for more unique animation; /root/reel/series/values.py). Paper read in full from Drive. 30 Oct 2026."
+}
