@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T21:53:29Z",
+ "generated": "2026-10-31T21:51:34Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -20,6 +20,11 @@
    "date": "2026-10-27",
    "instagram": 42,
    "facebook": 3
+  },
+  {
+   "date": "2026-11-01",
+   "instagram": 42,
+   "linkedin": 22
   }
  ],
  "unavailable": [
@@ -82,7 +87,12 @@
    "held_reason": "Blog check could not be completed on 2026-10-14: fetching the blog_url failed (page-fetch permission request was not answered during the unattended run), so the blog could not be confirmed live. Not posted. Blog confirmed live on re-check the same morning; post then published.",
    "interactions": {
     "latest": {
-     "checked": "2026-10-20",
+     "checked": "2026-11-01",
+     "likes": 3,
+     "comments": 1
+    },
+    "day7": {
+     "checked": "2026-11-01",
      "likes": 3,
      "comments": 1
     },
@@ -159,7 +169,12 @@
    "held_reason": null,
    "interactions": {
     "latest": {
-     "checked": "2026-10-20",
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
      "likes": 2,
      "comments": 0
     },
@@ -192,7 +207,13 @@
    "held_reason": null,
    "interactions": {
     "latest": {
-     "checked": "2026-10-20",
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
      "reactions": 0,
      "comments": 0,
      "shares": 0
@@ -247,7 +268,19 @@
    "posted_at": "2026-10-21T20:18:15+11:00",
    "url": "https://www.instagram.com/p/DewEV-nnTkG/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/p/DewEV-nnTkG/"
+   }
   },
   {
    "date": "2026-10-21",
@@ -273,7 +306,21 @@
    "posted_at": "2026-10-21T20:18:32+11:00",
    "url": "https://www.facebook.com/117619581441312_122330928740026884",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/122330765744026884/posts/122330928740026884"
+   }
   },
   {
    "date": "2026-10-23",
@@ -299,7 +346,19 @@
    "posted_at": "2026-10-23T08:50:48+11:00",
    "url": "https://www.instagram.com/p/Dez_RA5mGLC/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 3,
+     "comments": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "likes": 3,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/p/Dez_RA5mGLC/"
+   }
   },
   {
    "date": "2026-10-23",
@@ -325,7 +384,21 @@
    "posted_at": "2026-10-23T08:51:04+11:00",
    "url": "https://www.facebook.com/117619581441312_122331150290026884",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/122330765744026884/posts/122331150290026884"
+   }
   },
   {
    "date": "2026-10-24",
@@ -351,7 +424,19 @@
    "posted_at": "2026-10-24T08:49:39+11:00",
    "url": "https://www.instagram.com/p/De2j71UF-c_/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/p/De2j71UF-c_/"
+   }
   },
   {
    "date": "2026-10-24",
@@ -377,7 +462,21 @@
    "posted_at": "2026-10-24T08:49:44+11:00",
    "url": "https://www.facebook.com/117619581441312_122331293792026884",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/122330765744026884/posts/122331293792026884"
+   }
   },
   {
    "date": "2026-10-25",
@@ -403,7 +502,19 @@
    "posted_at": "2026-10-25T08:47:17+11:00",
    "url": "https://www.instagram.com/reel/De5IZqhCeJV/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/reel/De5IZqhCeJV/"
+   }
   },
   {
    "date": "2026-10-25",
@@ -427,9 +538,23 @@
    "platform": "facebook",
    "status": "posted",
    "posted_at": "2026-10-25T08:47:23+11:00",
-   "url": null,
+   "url": "https://www.facebook.com/reel/1866153707704401/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "day7": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/reel/1866153707704401/"
+   }
   },
   {
    "platform": "gbp",
@@ -493,7 +618,14 @@
    "posted_at": "2026-10-28T08:52:51+11:00",
    "url": "https://www.instagram.com/p/DfA3eJoFfUi/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/p/DfA3eJoFfUi/"
+   }
   },
   {
    "date": "2026-10-28",
@@ -519,7 +651,15 @@
    "posted_at": "2026-10-28T08:52:56+11:00",
    "url": "https://www.facebook.com/117619581441312_122331882956026884",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/122330765744026884/posts/122331882956026884"
+   }
   },
   {
    "platform": "linkedin",
@@ -536,7 +676,13 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-10/2026-10-22-double-empathy.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-10-28.json",
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 0,
+     "comments": 0
+    }
+   }
   },
   {
    "date": "2026-10-29",
@@ -562,7 +708,14 @@
    "posted_at": "2026-10-29T08:57:17+11:00",
    "url": "https://www.instagram.com/reel/DfDcspwiCOE/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 2,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/reel/DfDcspwiCOE/"
+   }
   },
   {
    "date": "2026-10-29",
@@ -586,9 +739,17 @@
    "platform": "facebook",
    "status": "posted",
    "posted_at": "2026-10-29T08:57:23+11:00",
-   "url": null,
+   "url": "https://www.facebook.com/reel/1623843249469397/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/reel/1623843249469397/"
+   }
   },
   {
    "platform": "linkedin",
@@ -605,7 +766,13 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-10/2026-10-29-emotion-regulation.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-10-29.json",
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 1,
+     "comments": 0
+    }
+   }
   },
   {
    "date": "2026-10-30",
@@ -631,7 +798,14 @@
    "posted_at": "2026-10-30T08:59:04+11:00",
    "url": "https://www.instagram.com/reel/DfGBuqFAJjx/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "likes": 4,
+     "comments": 0
+    },
+    "url": "https://www.instagram.com/reel/DfGBuqFAJjx/"
+   }
   },
   {
    "date": "2026-10-30",
@@ -655,9 +829,17 @@
    "platform": "facebook",
    "status": "posted",
    "posted_at": "2026-10-30T08:59:08+11:00",
-   "url": null,
+   "url": "https://www.facebook.com/reel/2485392125285904/",
    "held_reason": null,
-   "interactions": null
+   "interactions": {
+    "latest": {
+     "checked": "2026-11-01",
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0
+    },
+    "url": "https://www.facebook.com/reel/2485392125285904/"
+   }
   },
   {
    "date": "2026-11-01",
@@ -679,9 +861,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-01-talking-to-strangers.thumb.jpg",
    "source": "instagram-queue/2026-11-01.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-01T08:51:28+11:00",
+   "url": "https://www.instagram.com/reel/DfLKcY6DIkn/",
    "held_reason": null,
    "interactions": null
   },
@@ -705,8 +887,8 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-01-talking-to-strangers.thumb.jpg",
    "source": "instagram-queue/2026-11-01.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
+   "status": "posted",
+   "posted_at": "2026-11-01T08:51:32+11:00",
    "url": null,
    "held_reason": null,
    "interactions": null
