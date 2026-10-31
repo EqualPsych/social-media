@@ -2,7 +2,7 @@
   "date": "2026-11-01",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "reel",
   "goal": "share",
   "topic": "Your brain's best guess 3: Strangers enjoy talking more than you predict",
@@ -14,5 +14,14 @@
   "cover": "teal",
   "redesigned": [
     "2026-10-22: hook frame colour rotated; text, voiceover and music unchanged."
-  ]
+  ],
+  "posted_at": "2026-11-01T08:51:28+11:00",
+  "posted_url": "https://www.instagram.com/reel/DfLKcY6DIkn/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-11-01T08:51:32+11:00",
+    "id_or_url": "4615639125387112",
+    "via": "meta"
+  }
 }
