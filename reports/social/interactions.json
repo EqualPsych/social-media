@@ -11,46 +11,48 @@
    "date": "2026-10-27",
    "instagram": 42,
    "facebook": 3
+  },
+  {
+   "date": "2026-11-01",
+   "instagram": 42,
+   "linkedin": 22
   }
  ],
  "posts": [
   {
    "platform": "instagram",
-   "date": "2026-10-14",
-   "format": "single",
-   "topic": "Stoicism (single)",
-   "id": "18027782447696772",
-   "url": "https://www.instagram.com/p/Dec2rjAl3BR/",
+   "date": "2026-10-07",
+   "format": "carousel",
+   "topic": "ADHD medication and stress (carousel)",
+   "id": "17877669657632937",
+   "url": "https://www.instagram.com/p/DeLjX4fl3jr/",
    "latest": {
-    "checked": "2026-10-20",
+    "checked": "2026-11-01",
     "likes": 3,
-    "comments": 1
-   }
-  },
-  {
-   "platform": "instagram",
-   "date": "2026-10-18",
-   "format": "reel",
-   "topic": "Your brain's best guess 1: Reaching out means more than you think",
-   "id": "18114473528134653",
-   "url": "https://www.instagram.com/reel/DenEO99DxuU/",
-   "latest": {
-    "checked": "2026-10-20",
-    "likes": 2,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 3,
     "comments": 0
    }
   },
   {
-   "platform": "facebook",
-   "date": "2026-10-18",
-   "format": "reel",
-   "topic": "Your brain's best guess 1: Reaching out means more than you think",
-   "url": "https://www.facebook.com/reel/1086635857414591/",
+   "platform": "instagram",
+   "date": "2026-10-09",
+   "format": "carousel",
+   "topic": "Stoicism (carousel)",
+   "id": "18127111133478045",
+   "url": "https://www.instagram.com/p/DePtp26jJlT/",
    "latest": {
-    "checked": "2026-10-20",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
+    "checked": "2026-11-01",
+    "likes": 4,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 4,
+    "comments": 0
    }
   },
   {
@@ -71,6 +73,24 @@
    }
   },
   {
+   "platform": "instagram",
+   "date": "2026-10-14",
+   "format": "single",
+   "topic": "Stoicism (single)",
+   "id": "18027782447696772",
+   "url": "https://www.instagram.com/p/Dec2rjAl3BR/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 3,
+    "comments": 1
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 3,
+    "comments": 1
+   }
+  },
+  {
    "platform": "linkedin",
    "date": "2026-10-15",
    "format": "single finding",
@@ -83,6 +103,43 @@
    }
   },
   {
+   "platform": "facebook",
+   "date": "2026-10-18",
+   "format": "reel",
+   "topic": "Your brain's best guess 1: Reaching out means more than you think",
+   "url": "https://www.facebook.com/reel/1086635857414591/",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-18",
+   "format": "reel",
+   "topic": "Your brain's best guess 1: Reaching out means more than you think",
+   "id": "18114473528134653",
+   "url": "https://www.instagram.com/reel/DenEO99DxuU/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
    "platform": "linkedin",
    "date": "2026-10-20",
    "format": "long-form",
@@ -91,6 +148,256 @@
    "latest": {
     "checked": "2026-10-20",
     "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-21",
+   "format": "carousel",
+   "topic": "Meaning in your twenties (carousel)",
+   "url": "https://www.facebook.com/122330765744026884/posts/122330928740026884",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-21",
+   "format": "carousel",
+   "topic": "Meaning in your twenties (carousel)",
+   "id": "18010775966986281",
+   "url": "https://www.instagram.com/p/DewEV-nnTkG/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-23",
+   "format": "carousel",
+   "topic": "ADHD: the full picture, overview",
+   "url": "https://www.facebook.com/122330765744026884/posts/122331150290026884",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-23",
+   "format": "carousel",
+   "topic": "ADHD: the full picture, overview",
+   "id": "18234190576324219",
+   "url": "https://www.instagram.com/p/Dez_RA5mGLC/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 3,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 3,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-24",
+   "format": "single",
+   "topic": "Chronic stress and the brain (single)",
+   "url": "https://www.facebook.com/122330765744026884/posts/122331293792026884",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-24",
+   "format": "single",
+   "topic": "Chronic stress and the brain (single)",
+   "id": "18022732655866470",
+   "url": "https://www.instagram.com/p/De2j71UF-c_/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-25",
+   "format": "reel",
+   "topic": "Your brain's best guess 2: Deep talk is less awkward than you expect",
+   "url": "https://www.facebook.com/reel/1866153707704401/",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-25",
+   "format": "reel",
+   "topic": "Your brain's best guess 2: Deep talk is less awkward than you expect",
+   "id": "18384803560230940",
+   "url": "https://www.instagram.com/reel/De5IZqhCeJV/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   },
+   "day7": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-28",
+   "format": "single",
+   "topic": "Meaning in your twenties (single)",
+   "url": "https://www.facebook.com/122330765744026884/posts/122331882956026884",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-28",
+   "format": "single",
+   "topic": "Meaning in your twenties (single)",
+   "id": "18429889693147489",
+   "url": "https://www.instagram.com/p/DfA3eJoFfUi/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "linkedin",
+   "date": "2026-10-28",
+   "format": "research graphic",
+   "topic": "The double empathy problem",
+   "id": "urn:li:share:7520958376588197889",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-29",
+   "format": "reel",
+   "topic": "Cyclic sighing: animated explainer (Balban et al., 2023)",
+   "url": "https://www.facebook.com/reel/1623843249469397/",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-29",
+   "format": "reel",
+   "topic": "Cyclic sighing: animated explainer (Balban et al., 2023)",
+   "id": "18009359199002761",
+   "url": "https://www.instagram.com/reel/DfDcspwiCOE/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "linkedin",
+   "date": "2026-10-29",
+   "format": "single finding",
+   "topic": "Emotion regulation across mental health conditions",
+   "id": "urn:li:share:7521320659390550016",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "platform": "facebook",
+   "date": "2026-10-30",
+   "format": "reel",
+   "topic": "ADHD: the full picture, missed",
+   "url": "https://www.facebook.com/reel/2485392125285904/",
+   "latest": {
+    "checked": "2026-11-01",
+    "reactions": 0,
+    "comments": 0,
+    "shares": 0
+   }
+  },
+  {
+   "platform": "instagram",
+   "date": "2026-10-30",
+   "format": "reel",
+   "topic": "ADHD: the full picture, missed",
+   "id": "18100891169413462",
+   "url": "https://www.instagram.com/reel/DfGBuqFAJjx/",
+   "latest": {
+    "checked": "2026-11-01",
+    "likes": 4,
     "comments": 0
    }
   }
