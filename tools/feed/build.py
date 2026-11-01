@@ -69,7 +69,8 @@ def top(bg, n=None, pill=None, logo=False):
     if logo and t['logo']:
         right = f"<img src='data:image/png;base64,{t['logo']}' style='height:64px;display:block'>"
     elif n:
-        right = f"<span class='num' style='color:{t['ft']}'>{n:02d} / 08</span>"
+        num = TOTAL if n == TOTAL else f'{n:02d}'  # the CTA passes TOTAL: it is always the last slide
+        right = f"<span class='num' style='color:{t['ft']}'>{num} / {TOTAL}</span>"
     else:
         right = ''
     return f"<div class='top'>{left}{right}</div>"
@@ -99,12 +100,13 @@ def paras(bg, ps, size=37, first=0):
 
 
 # ---------- slide types ----------
-def cover(bg, pill, h, sub, size=96):
+def cover(bg, pill, h, sub, size=96, swipe=None):
+    """swipe: the swipe cue written for this post; None uses the fallback SWIPE."""
     t = TH[bg]
     return page(bg, top(bg, 1, pill) +
                 f"<div class='content'><h1 style='font-size:{size}px;color:{t['tx']}'>{em(h, bg)}</h1>{rule(bg, '48px 0 38px')}"
                 f"<p class='lt' style='font-size:38px;color:{t['mu']}'>{sub}</p></div>" +
-                foot(bg, 'Swipe to read &rarr;', TH[bg]['eb'] if bg in (NB, TL) else TH[bg]['tx']))
+                foot(bg, swipe or SWIPE, TH[bg]['eb'] if bg in (NB, TL) else TH[bg]['tx']))
 
 
 def single(bg, pill, h, sub, size=100, split=None):
@@ -123,12 +125,12 @@ def single(bg, pill, h, sub, size=100, split=None):
                 foot(bg, 'Kew &amp; Croydon, Melbourne'))
 
 
-def statement(n, bg, e, h, ps, s=None, low=False, size=82, big=False):
+def statement(n, bg, e, h, ps, s=None, low=False, size=82, big=False, send=None):
     t = TH[bg]
     hs = 190 if big else size
     return page(bg, top(bg, n) +
                 f"<div class='content{' low' if low else ''}'>{eb(bg, e)}<h1 style='font-size:{hs}px;color:{t['tx']}{';line-height:.95' if big else ''}'>{h}</h1>"
-                f"{rule(bg)}{paras(bg, ps)}{src(bg, s)}</div>" + foot(bg))
+                f"{rule(bg)}{paras(bg, ps)}{src(bg, s)}{send_line(bg, send)}</div>" + foot(bg))
 
 
 def research(n, bg, e, h, ps, finding, s, size=80):
@@ -166,6 +168,12 @@ def quote(n, bg, e, q, note, send):
                 f"<p style='margin-top:34px;font-family:Nunito,sans-serif;font-weight:900;font-size:28px;color:{Y if bg in (NB, TL) else TL}'>{send}</p></div>" + foot(bg))
 
 
+def send_line(bg, send):
+    """Share prompt under a shareable slide, styled as on the quote slide."""
+    return (f"<p style='margin-top:34px;font-family:Nunito,sans-serif;font-weight:900;font-size:28px;"
+            f"color:{Y if bg in (NB, TL) else TL}'>{send}</p>") if send else ''
+
+
 def cards(n, bg, e, h, items, note=None, s=None, size=80):
     t = TH[bg]
     li = ''.join(f"<div class='li' style='background:{t['card']}'><i style='background:{t['dot']}'></i><span style='color:{t['ctx']}'>{x}</span></div>" for x in items)
@@ -183,7 +191,8 @@ def agency(n, bg, e, h, ps, small, size=84):
 
 
 def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None):
-    """Logo, rule, signpost, save button. Split: logo on the top block (Teal), words on the bottom (Cream)."""
+    """Logo, rule, signpost, save button. Split: logo on the top block (Teal), words on the bottom (Cream).
+    Always the last slide, so it takes the carousel's total as its number. btn may be worded for the post; None drops the button."""
     t = TH[bg]
     if split:
         b = TH[split]
@@ -195,11 +204,11 @@ def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None):
                 + (f"<p style='margin-top:26px;font-size:24px;line-height:1.5;color:{WGR}'>{small}</p>" if small else '')
                 + (f"<div style='margin-top:34px'><span class='btn' style='background:{TL};color:{WH}'>{btn}</span></div>" if btn else '')
                 + "</div>")
-        return page(bg, top(bg, 8) + body + foot(split, 'Kew &amp; Croydon, Melbourne'), split=split)
+        return page(bg, top(bg, TOTAL) + body + foot(split, 'Kew &amp; Croydon, Melbourne'), split=split)
     logo = white_b64 if bg in (NB, TL) else primary_b64
     acc = Y if bg in (NB, TL) else TL
     bs = f"background:{Y};color:{NB}" if bg in (NB, TL) else f"background:{TL};color:{WH}"
-    return page(bg, top(bg, 8) +
+    return page(bg, top(bg, TOTAL) +
                 f"<div class='content' style='align-items:center;text-align:center'>"
                 f"<img src='data:image/png;base64,{logo}' style='width:420px;display:block'>"
                 f"<div class='rule' style='width:72px;background:{acc};margin:56px 0 48px'></div>"
@@ -213,6 +222,12 @@ def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None):
 READ = 'Read the full piece at equalpsychology.com.au'
 SEND_H = 'Send this to someone who might find it helpful &rarr;'
 SEND_N = 'Send this to someone who might need it.'
+# Slide numbers: "NN / TT". TT is filled in at write time from the carousel's real length
+# (8 to 10 slides; Instagram allows up to 10), so a 9- or 10-slide carousel numbers itself correctly.
+TOTAL = '@@TOTAL@@'
+SWIPE = 'Swipe to read &rarr;'  # fallback swipe cue; cover(swipe=...) takes one written for the post
+
+
 MG = ("Not sure where to start? The Meet and Greet is a free 15-minute call or in-person meeting, no obligation, "
       "to see if we are the right fit before committing to anything.")
 
@@ -417,9 +432,11 @@ S = {
 }
 
 for d, slides in P.items():
+    n = len(slides)
+    assert 2 <= n <= 10, f'{d}: {n} slides (Instagram allows 2 to 10)'
     for i, h in enumerate(slides, 1):
         if h:
-            open(f'{OUT}/C_{d}_{i}.html', 'w').write(h)
+            open(f'{OUT}/C_{d}_{i}.html', 'w').write(h.replace(TOTAL, f'{n:02d}'))
 for d, h in S.items():
     open(f'{OUT}/S_{d}.html', 'w').write(h)
 print('ok')
