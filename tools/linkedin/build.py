@@ -140,7 +140,7 @@ page('2026-11-02-in-practice-10', 'butter', [
      '<b>Self-criticism is changeable</b>',
      '<b>Three consult questions</b> and when to consider a referral'], 'num'),
   ('line', 'Free issue and patient handout on our referrers page.'),
-], 'Sources: Buric et al., 2026; Löw et al., 2020; Wakelin et al., 2022; Millard et al., 2023')
+], 'Sources: Löw et al., 2020; Millard et al., 2023; Wakelin et al., 2022')
 
 page('2026-11-05-safety-behaviours', 'cream', [
   ('pill', 'Anxiety'),
@@ -222,11 +222,11 @@ page('2026-11-03-demoralization', 'teal', [
 
 page('2026-11-24-adhd-medication-stress', 'teal', [
   ('pill', 'ADHD and stress'),
-  ('h1', 'Stress and ADHD draw on the *same brain system*'),
+  ('h1', 'When things start slipping, rising stress is *worth exploring*'),
   ('cols', [
-     ('Stimulant medication supports', ['Attention', 'Holding back a response', 'Working memory']),
-     ('It does not', ['Help emotion regulation as much as attention', 'Reduce workload or pressure'])]),
-  ('line', 'When things slip, look at what has changed in the load.'),
+     ('Stimulant medication is associated with better', ['Attention', 'Working memory']),
+     ('It does not', ['Help emotion regulation as much as attention', 'Reduce the demands stress brings'])]),
+  ('line', 'Asking what has changed in the load can point to other levers.'),
 ], 'Sources: Isfandnia et al., 2024; Lenzi et al., 2018')
 
 page('2027-02-23-caffeine-dose-timing', 'butter', [
