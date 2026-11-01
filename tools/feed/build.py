@@ -100,9 +100,17 @@ def paras(bg, ps, size=37, first=0):
 
 
 # ---------- slide types ----------
-def cover(bg, pill, h, sub, size=96, swipe=None):
-    """swipe: the swipe cue written for this post; None uses the fallback SWIPE."""
+def cover(bg, pill, h, sub, size=96, swipe=None, split=None):
+    """swipe: the swipe cue written for this post; None uses the fallback SWIPE.
+    split: colour of the bottom 45% block (Section 4.2 'split'); headline in the top block, rule and sub-line in the bottom."""
     t = TH[bg]
+    if split:
+        b = TH[split]
+        return page(bg, top(bg, 1, pill) +
+                    f"<div class='content' style='bottom:auto;height:540px'><h1 style='font-size:{size}px;color:{t['tx']}'>{em(h, bg)}</h1></div>"
+                    f"<div class='content' style='top:742px'>{rule(split, '0 0 38px')}"
+                    f"<p class='lt' style='font-size:38px;color:{b['tx']}'>{sub}</p></div>" +
+                    foot(split, swipe or SWIPE, b['eb'] if split in (NB, TL) else b['tx']), split=split)
     return page(bg, top(bg, 1, pill) +
                 f"<div class='content'><h1 style='font-size:{size}px;color:{t['tx']}'>{em(h, bg)}</h1>{rule(bg, '48px 0 38px')}"
                 f"<p class='lt' style='font-size:38px;color:{t['mu']}'>{sub}</p></div>" +
@@ -147,24 +155,25 @@ def research(n, bg, e, h, ps, finding, s, size=80):
                 f"{src(bg, s)}</div>" + foot(bg))
 
 
-def plain(n, bg, e, h, label, text, note=None, size=82):
-    """Term in plain language: white card on colour."""
+def plain(n, bg, e, h, label, text, note=None, size=82, s=None):
+    """Term in plain language: white card on colour. s: optional source line under the note."""
     t = TH[bg]
     nt = f"<p class='lt' style='margin-top:34px;font-size:35px;color:{t['tx']}'>{note}</p>" if note else ''
     return page(bg, top(bg, n) +
                 f"<div class='content'>{eb(bg, e)}<h1 style='font-size:{size}px;color:{t['tx']}'>{h}</h1>"
                 f"<div class='card' style='background:{WH};margin-top:48px;{'border:3px solid ' + TL if bg in (CR, PY) else ''}'>"
                 f"<div class='lab' style='color:{TL}'>{label}</div>"
-                f"<p style='font-family:Nunito,sans-serif;font-weight:700;font-size:38px;line-height:1.34;color:{NB}'>{text}</p></div>{nt}</div>" + foot(bg))
+                f"<p style='font-family:Nunito,sans-serif;font-weight:700;font-size:38px;line-height:1.34;color:{NB}'>{text}</p></div>{nt}{src(bg, s)}</div>" + foot(bg))
 
 
-def quote(n, bg, e, q, note, send):
+def quote(n, bg, e, q, note, send, s=None):
+    """s: optional source line between the note and the share prompt."""
     t = TH[bg]
     return page(bg, top(bg, n) +
                 f"<div class='content'>{eb(bg, e)}"
                 f"<div style='border-left:8px solid {Y if bg in (NB, TL) else TL};padding:6px 0 6px 44px'>"
                 f"<p style='font-family:Nunito,sans-serif;font-weight:900;font-style:italic;font-size:58px;line-height:1.2;color:{t['tx']}'>{q}</p></div>"
-                f"<p class='lt' style='margin-top:48px;font-size:36px;color:{t['mu'] if bg == NB else t['tx']}'>{note}</p>"
+                f"<p class='lt' style='margin-top:48px;font-size:36px;color:{t['mu'] if bg == NB else t['tx']}'>{note}</p>{src(bg, s)}"
                 f"<p style='margin-top:34px;font-family:Nunito,sans-serif;font-weight:900;font-size:28px;color:{Y if bg in (NB, TL) else TL}'>{send}</p></div>" + foot(bg))
 
 
@@ -275,11 +284,11 @@ P['2026-11-03'] = [
           "&ldquo;I have tried saying kind things to myself. It feels fake, and the critic just keeps going.&rdquo;",
           "This is common, and it is not a sign you are bad at self-compassion. You may have been asked to start with the harder job.", SEND_H),
     cards(6, CR, None, "Why kindness can be the harder door",
-          ["The harsh voice is automatic. The kind one has to be called up.",
+          ["The harsh voice can arrive on its own. The kind one often has to be called up.",
            "For some people, kindness towards themselves feels uncomfortable, even unsafe.",
            "The critic may have felt like the thing keeping you on track.",
-           "Worry and rumination can keep the harsh voice looping."],
-          note="These overlap, so a small shift in one can make room in the others.", size=74),
+           "Worry and rumination are the most studied link between how we treat ourselves and how we feel."],
+          note="These often show up together.", s="Source: Wang et al., 2025", size=74),
     agency(7, NB, 'One thing to notice this week', "Catch the first sentence",
            ["The next time something goes wrong, notice the first sentence your mind produces.",
             "You do not need to change it. Just notice whether it sounds like an observation or a verdict."],
@@ -287,30 +296,30 @@ P['2026-11-03'] = [
     cta(TL, 'Being less harsh may matter more than being kinder', READ, split=CR),
 ]
 
-# 13 Nov: ADHD lookalikes (cover paper). CR TL Y CR NB PY TL NB
+# 13 Nov: ADHD lookalikes (cover split Y/CR, 2 Nov audit: 11 Nov is midnight and 12 Nov paper). split(Y/CR) TL Y CR NB PY TL NB
 P['2026-11-13'] = [
-    cover(CR, 'ADHD in adults', "Not everything that <em>looks like</em> ADHD is ADHD",
-          "And sometimes it is ADHD and something else as well."),
+    cover(Y, 'ADHD in adults', "Not everything that <em>looks like</em> ADHD is ADHD",
+          "And sometimes it is ADHD and something else as well.", split=CR),
     statement(2, TL, 'Why this matters', "Attention is affected by many things",
               ["Focus, memory and restlessness can shift with sleep, health, stress and mood.",
                "Australian guidelines ask clinicians to check for these before, and alongside, an ADHD diagnosis."],
               s="Source: AADPA, 2022"),
     research(3, Y, 'Sleep', "Poor sleep can look a lot like ADHD", [],
-             "Short or broken sleep can bring forgetfulness, restlessness and trouble concentrating. Sleep problems are also very common in adults with ADHD.",
-             "Source: van der Ham et al., 2024"),
+             "Sleep problems can bring symptoms that look like ADHD. They are also common in adults with ADHD.",
+             "Source: AADPA, 2022; van der Ham et al., 2024"),
     cards(4, CR, 'Physical health', "Things worth ruling in or out",
           ["Hearing or vision problems", "Thyroid conditions", "Anaemia", "Some medicines, and stimulants such as caffeine"],
           note="These are simple for a GP to check.", s="Source: AADPA, 2022"),
-    statement(5, NB, 'Trauma and stress', "Overlap, and often both",
-              ["Trauma can affect attention, sleep and emotional control in ways that overlap with ADHD.",
-               "The two also commonly occur together, so a careful assessment considers both."],
+    statement(5, NB, 'Trauma and PTSD', "Overlap, and often both",
+              ["PTSD can bring attention difficulties that overlap with ADHD.",
+               "Research suggests the two also commonly occur together, so a careful assessment considers both."],
               s="Source: Magdi et al., 2025", low=True),
     statement(6, PY, 'Mood and substances', "Cause, consequence, or both",
               ["Anxiety, low mood and substance use can all affect focus and motivation.",
                "Australian guidance notes they can also follow from ADHD that went unrecognised."],
-              s="Source: AADPA, 2022; Rohner et al., 2023"),
+              s="Source: AADPA, 2022"),
     statement(7, TL, 'Hormones', "An area still being researched",
-              ["Hormonal shifts may affect ADHD traits, but research on perimenopause is still early and mixed.",
+              ["Hormonal shifts may affect ADHD symptoms, but research on ADHD in perimenopause has barely begun.",
                "Midlife changes deserve careful, open-minded assessment."],
               s="Source: Osianlis et al., 2025"),
     cta(NB, 'This is why our assessment includes a health and sleep history,',
@@ -386,7 +395,8 @@ P['2026-12-08'] = [
           "This is a recognised part of grief. It is not a sign something is wrong with you.", SEND_N),
     cards(6, CR, 'It is not just one thing', "What can make grief heavier",
           ["Grief or low mood before the loss", "An unexpected death", "A violent death", "Losing a partner or a child"],
-          note="This is not a forecast. It is a reason to be gentle with the pace."),
+          note="This is not a forecast. It is a reason to be gentle with the pace.",
+          s="Source: Buur et al., 2024, Clinical Psychology Review"),
     agency(7, TL, 'One thing to try this week', "Notice the shape, not the size.",
            ["This week, notice whether the longing comes in waves around certain days, or stays at the same pitch most of the time."],
            "Hard days are part of grief, not a step backwards."),
@@ -400,9 +410,9 @@ P['2026-12-16'] = [
     statement(2, PY, 'Grief at Christmas', "The holidays are built from memory.",
               ["The seat that was always theirs. The voice that started the same song.",
                "When someone is missing, the season places you back inside those moments."]),
-    research(3, Y, 'What the research shows', "Rituals keep us connected", [],
-             "Across many cultures, rituals may help people keep a continuing bond with the person who died, and may strengthen ties between those who are left.",
-             "Source: Killikelly et al., 2025, The Lancet"),
+    research(3, Y, 'What the research suggests', "Rituals keep us connected", [],
+             "Researchers who studied widowed older adults suggest that sharing memories of the person, or quietly marking a special day, may help in the early months.",
+             "Source: Carr et al., 2014"),
     plain(4, TL, 'A term worth knowing', "Continuing bond", 'In plain language',
           "A way of staying connected to the person who died, through rituals, stories and small acts of remembering.",
           "The connection does not end. It changes shape."),
@@ -419,6 +429,34 @@ P['2026-12-16'] = [
     cta(TL, READ.replace(' at ', ' at<br>')),
 ]
 
+# 2 Feb: Sleep is built (cover teal). Not built here before the 2 Nov 2026 audit; only the changed cover is defined.
+# The template reproduces the original slide pixel for pixel at size 100, so only the sub-line differs.
+P['2027-02-02'] = [
+    cover(TL, 'Sleep drive', "Sleep is <em>built,</em> not owed.",
+          "Why sleeping in after a bad night can make the next night harder when sleep is already a struggle.", 100),
+    None, None, None, None, None, None, None,
+]
+
+# 16 Feb: Sleep drive and coffee (cover paper). Only slides 4, 5 and 7 (2 Nov audit) are defined; each reproduced
+# the original pixel for pixel before the wording change.
+P['2027-02-16'] = [
+    None, None, None,
+    plain(4, PY, 'A term worth knowing', "Adenosine", 'In plain language',
+          "A substance in the brain that rises when we stay awake for a long time, and can quieten the systems that keep us alert.",
+          "It is one of several signals behind sleep drive, and the research is still developing.", size=96,
+          s="Source: Reichert et al., 2022"),
+    quote(5, TL, 'Does this sound familiar?',
+          "&ldquo;Three coffees got me through the afternoon. Then I lay awake until one.&rdquo;",
+          "Caffeine can reach well into the night, and the same coffee can affect people differently.", SEND_N,
+          s="Source: Gardiner et al., 2023"),
+    None,
+    agency(7, Y, 'One thing to try this week', "Move the last coffee a little earlier",
+           ["Notice when your last coffee is, and try having it a little earlier.",
+            "Watch the size of one dose too. Several coffees or a pre-workout at once can reach into the night."],
+           "Caffeine affects people differently. Notice what is true for you.", size=80),
+    None,
+]
+
 # Singles
 S = {
     '2026-10-24': single(NB, 'Chronic stress', "Stress does not just feel bad. It quietly <em>turns down</em> the part of your brain you think with.",
@@ -427,6 +465,8 @@ S = {
                          "The questioning is human and healthy. It only tips into distress when it comes with the feeling that your choices do not count.", 92),
     '2026-12-12': single(TL, 'Grief at Christmas', "Whether grief is <em>still moving</em> matters more than whether it still hurts.",
                          "Intensity on one day tells you little. What matters is the shape of grief across months.", 96),
+    '2027-02-23': single(Y, 'Sleep drive', "That doze on the couch at 9pm can take the edge off <em>tonight&rsquo;s sleep drive</em>.",
+                         "Sleep at any time of day uses up some of the pressure that builds while you are awake. An evening doze spends it right before you need it.", 92),
     '2026-12-20': single(TL, 'Grief at Christmas', "Grief at Christmas is part of <em>still loving someone.</em>",
                          "What it needs is a little room at the table.", 100, split=CR),
 }
