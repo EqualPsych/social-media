@@ -55,9 +55,18 @@ C = {
         (CR, 'Something to try', "This week, notice whether the longing comes in waves around certain days, or stays the same most of the time.", 78),
         (TL, None, None, None),
     ],
+    'sleep-built': [
+        (PY, 'Sleep drive', "After a bad night, the alarm is doing more than you think.", 96),
+        (Y, 'What research shows', "A pressure to sleep builds from the moment you get up. A sleep-in starts it later.", 86),
+        (TL, 'Why it matters', "So less of it is there at bedtime, and the next night can start harder.", 96),
+        (CR, 'Something to try', "This week, keep your usual wake time after a poor night, and plan a gentle first half hour.", 86),
+        (TL, None, None, None),
+    ],
 }
 END = {'grief-at-christmas': dict(title='Grief at Christmas', line='The full carousel is on our profile',
-                                  source='Source: Carr et al., 2014')}
+                                  source='Source: Carr et al., 2014'),
+       'sleep-built': dict(title='Sleep is built, not owed', line='The full carousel is on our profile',
+                           source='Source: Borbély et al., 2016; Sweetman et al., 2026')}
 
 if __name__ == '__main__':
     slug = sys.argv[1]
