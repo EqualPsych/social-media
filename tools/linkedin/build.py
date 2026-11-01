@@ -70,6 +70,15 @@ th,td{{text-align:left;vertical-align:top}}
 .tbl .r div{{font-size:27px;line-height:1.35;padding:22px 28px}}
 .tbl .r div:first-child{{color:{WG}}}
 .tbl .r div:last-child{{font-weight:500;border-left:1.5px solid rgba(110,104,98,.2)}}
+.t3{{border-radius:20px;overflow:hidden;background:{t['card']};color:{t['ctext']}}}
+.t3 .h,.t3 .r{{display:grid;grid-template-columns:270px 1fr 1fr}}
+.t3 .h div{{font-family:'Nunito';font-weight:900;font-size:27px;padding:22px 26px}}
+.t3 .r{{border-top:1.5px solid rgba(110,104,98,.2)}}
+.t3 .r div{{font-size:27px;line-height:1.35;padding:22px 26px}}
+.t3 .r div:first-child{{font-family:'Nunito';font-weight:800;font-size:20px;letter-spacing:.1em;text-transform:uppercase;color:{TL};line-height:1.4;padding-top:27px}}
+.t3 .r div+div{{border-left:1.5px solid rgba(110,104,98,.2)}}
+.cols .card{{padding:28px 30px}}
+.cols .row{{font-size:28px}}
 """
 
 def page(name, theme, blocks, sources):
@@ -90,6 +99,16 @@ def page(name, theme, blocks, sources):
             body += (f"<div class='tbl'><div class='h'><div style='background:{CR};color:{NB}'>{h1_}</div>"
                      f"<div style='background:{Y};color:{NB}'>{h2_}</div></div>"
                      + ''.join(f"<div class='r'><div>{l}</div><div>{r}</div></div>" for l, r in rows) + "</div>")
+        elif kind == 'table3':
+            h1_, h2_, rows = a
+            body += (f"<div class='t3'><div class='h'><div></div><div style='background:{CR};color:{TL}'>{h1_}</div>"
+                     f"<div style='background:{Y};color:{NB}'>{h2_}</div></div>"
+                     + ''.join(f"<div class='r'><div>{l}</div><div>{m}</div><div>{r}</div></div>" for l, m, r in rows) + "</div>")
+        elif kind == 'cols':
+            body += "<div class='cols'>" + ''.join(
+                f"<div class='card'><div class='lab'>{lab}</div><div class='list'>"
+                + ''.join(f"<div class='row'><div class=dot></div><div>{x}</div></div>" for x in items) + "</div></div>"
+                for lab, items in a[0]) + "</div>"
         elif kind == 'q': body += f"<div><div class='qlab'>{a[0]}</div><div class='q'>{html.escape(a[1])}</div></div>"
         elif kind == 'line': body += f"<div class='line'>{a[0]}</div>"
         elif kind == 'note': body += f"<div class='note'>{a[0]}</div>"
@@ -117,11 +136,11 @@ page('2026-11-02-in-practice-10', 'butter', [
   ('h1', 'Being less harsh is not the same as *being kinder*'),
   ('list', 'What the issue covers', [
      '<b>Two levers, not one.</b> The harsh side of self-compassion sits closer to distress',
-     '<b>When kindness feels threatening</b> particularly for people who are highly self-critical',
+     '<b>What to listen for:</b> two forms of the inner critic',
      '<b>Self-criticism is changeable</b>',
      '<b>Three consult questions</b> and when to consider a referral'], 'num'),
   ('line', 'Free issue and patient handout on our referrers page.'),
-], 'Sources: Muris & Petrocchi, 2017; Kirby et al., 2019; Chio et al., 2021; Wakelin et al., 2022')
+], 'Sources: Löw et al., 2020; Millard et al., 2023; Wakelin et al., 2022')
 
 page('2026-11-05-safety-behaviours', 'cream', [
   ('pill', 'Anxiety'),
@@ -154,9 +173,9 @@ page('2026-11-17-perimenopause', 'butter', [
   ('pill', 'Perimenopause'),
   ('h1', 'Mental health changes can begin in *perimenopause*'),
   ('table', 'Common assumption', 'What the evidence points to', [
-     ('The mental health side of menopause comes later, after the hot flushes', 'Mood, anxiety and cognitive changes can arrive years before hot flushes'),
+     ('The mental health side of menopause comes later, after the hot flushes', 'Changes in mood, anxiety and concentration can be part of the transition itself'),
      ('It is mostly about falling oestrogen', 'How unpredictably oestrogen fluctuates appears to matter')]),
-  ('line', 'Midlife brain fog is common and, in almost all cases, is not an early sign of dementia.'),
+  ('line', 'Problems with memory and concentration are commonly reported around menopause, and some may ease afterwards.'),
   ('q', 'Whatever your role', 'Ask gently and directly, and ask about sleep alongside mood.'),
 ], 'Sources: Davis et al., 2023; Badawy et al., 2024')
 
@@ -191,4 +210,34 @@ page('2026-12-01-in-practice-11', 'teal', [
      '<b>Three consult questions</b> and when to consider a referral'], 'num'),
   ('line', 'Free issue and patient handout on our referrers page. Lifeline: <span style="white-space:nowrap">13 11 14</span>.'),
 ], 'Sources: Carr et al., 2014; Aoun et al., 2018; Avis et al., 2025; Killikelly et al., 2025')
+page('2026-11-03-demoralization', 'teal', [
+  ('pill', 'Low mood'),
+  ('h1', 'Demoralization or depression? What *tells them apart*'),
+  ('table3', 'Demoralization', 'Depression', [
+     ('Hallmark', 'Feeling unable to cope or see a way forward', 'Loss of pleasure in things once enjoyed'),
+     ('Pleasure', 'Usually still present', 'Usually fades'),
+     ('Poor concentration, low energy, poor sleep', 'Usually absent', 'May be present')]),
+  ('line', 'The two can occur separately or together. The distinction is a prompt to look closer.'),
+], 'Source: de Figueiredo, 2026')
+
+page('2026-11-24-adhd-medication-stress', 'teal', [
+  ('pill', 'ADHD and stress'),
+  ('h1', 'When things start slipping, rising stress is *worth exploring*'),
+  ('cols', [
+     ('Stimulant medication is associated with better', ['Attention', 'Working memory']),
+     ('It does not', ['Help emotion regulation as much as attention', 'Reduce the demands stress brings'])]),
+  ('line', 'Asking what has changed in the load can point to other levers.'),
+], 'Sources: Isfandnia et al., 2024; Lenzi et al., 2018')
+
+page('2027-02-23-caffeine-dose-timing', 'butter', [
+  ('pill', 'Caffeine and sleep'),
+  ('h1', 'Caffeine timing *and dose* both matter'),
+  ('list', 'What two recent studies suggest', [
+     'Caffeine was linked with less sleep, less deep sleep and longer to fall asleep',
+     'Tea seemed to have less effect than coffee',
+     'About one coffee: little measurable difference to sleep',
+     'About four coffees at once: less deep sleep, even taken early in the day']),
+  ('q', 'Ask about the whole day', 'When is your last caffeine, and how much at once?'),
+  ('note', 'The dose trial studied young healthy men, and responses to caffeine vary.'),
+], 'Sources: Gardiner et al., 2023; Gardiner et al., 2025')
 print('built')
