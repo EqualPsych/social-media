@@ -410,7 +410,7 @@ P['2026-12-16'] = [
     statement(2, PY, 'Grief at Christmas', "The holidays are built from memory.",
               ["The seat that was always theirs. The voice that started the same song.",
                "When someone is missing, the season places you back inside those moments."]),
-    research(3, Y, 'What the research suggests', "Rituals keep us connected", [],
+    research(3, Y, 'What the research suggests', "Marking the day may help", [],
              "Researchers who studied widowed older adults suggest that sharing memories of the person, or quietly marking a special day, may help in the early months.",
              "Source: Carr et al., 2014"),
     plain(4, TL, 'A term worth knowing', "Continuing bond", 'In plain language',
@@ -466,7 +466,7 @@ S = {
     '2026-12-12': single(TL, 'Grief at Christmas', "Whether grief is <em>still moving</em> matters more than whether it still hurts.",
                          "Intensity on one day tells you little. What matters is the shape of grief across months.", 96),
     '2027-02-23': single(Y, 'Sleep drive', "That doze on the couch at 9pm can take the edge off <em>tonight&rsquo;s sleep drive</em>.",
-                         "Sleep at any time of day uses up some of the pressure that builds while you are awake. An evening doze spends it right before you need it.", 92),
+                         "Sleep at any time of day uses up some of the pressure that builds while you are awake. An evening doze can spend some of it right before bed.", 92),
     '2026-12-20': single(TL, 'Grief at Christmas', "Grief at Christmas is part of <em>still loving someone.</em>",
                          "What it needs is a little room at the table.", 100, split=CR),
 }

@@ -216,7 +216,7 @@ page('2026-11-03-demoralization', 'teal', [
   ('table3', 'Demoralization', 'Depression', [
      ('Hallmark', 'Feeling unable to cope or see a way forward', 'Loss of pleasure in things once enjoyed'),
      ('Pleasure', 'Usually still present', 'Usually fades'),
-     ('Concentration, energy, sleep', 'Usually absent', 'May be present')]),
+     ('Poor concentration, low energy, poor sleep', 'Usually absent', 'May be present')]),
   ('line', 'The two can occur separately or together. The distinction is a prompt to look closer.'),
 ], 'Source: de Figueiredo, 2026')
 
