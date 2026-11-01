@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T21:51:34Z",
+ "generated": "2026-11-01T21:39:19Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -25,6 +25,11 @@
    "date": "2026-11-01",
    "instagram": 42,
    "linkedin": 22
+  },
+  {
+   "date": "2026-11-02",
+   "instagram": 43,
+   "facebook": 4
   }
  ],
  "unavailable": [
@@ -913,7 +918,7 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/adhd-series/2026-11-02-ad.thumb.jpg",
    "source": "instagram-queue/2026-11-02.json",
    "platform": "instagram",
-   "status": "approved",
+   "status": "pending_review",
    "posted_at": null,
    "url": null,
    "held_reason": null,
@@ -939,7 +944,7 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/adhd-series/2026-11-02-ad.thumb.jpg",
    "source": "instagram-queue/2026-11-02.json",
    "platform": "facebook",
-   "status": "approved",
+   "status": "pending_review",
    "posted_at": null,
    "url": null,
    "held_reason": null,
@@ -954,7 +959,7 @@
    "format": "in practice summary",
    "kind": "In practice summary",
    "slot": "morning",
-   "status": "approved",
+   "status": "pending_review",
    "posted_at": null,
    "url": null,
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-02-in-practice-10.png",
