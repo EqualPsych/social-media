@@ -49,7 +49,7 @@ def frame(i, n, bg, label=None, text=None, size=86, end=None):
 
 C = {
     'grief-at-christmas': [
-        (TL, 'Grief at Christmas', "Most of us carry a timetable for grief.", 96),
+        (TL, 'Grief at Christmas', "It is easy to carry a timetable for grief.", 96),
         (Y, 'What research shows', "Among older widowed adults, distress rose around a late partner's birthday and in January, after the holidays.", 80),
         (PY, 'Why it matters', "How much it hurts on one day tells you very little. What matters is the shape of grief across months.", 82),
         (CR, 'Something to try', "This week, notice whether the longing comes in waves around certain days, or stays the same most of the time.", 78),
