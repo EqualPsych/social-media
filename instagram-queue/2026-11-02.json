@@ -2,7 +2,7 @@
   "date": "2026-11-02",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "reel",
   "topic": "ADHD: the full picture, ad (paid ad creative)",
   "blog_url": null,
@@ -16,5 +16,14 @@
     "2026-10-22: hook frame colour rotated; text, voiceover and music unchanged.",
     "2026-11-02: caption line on late recognition reworded to match Long & Coats (2022), read in full; full reference added."
   ],
-  "slot": "evening"
+  "slot": "evening",
+  "posted_at": "2026-11-02T20:45:26+11:00",
+  "posted_url": "https://www.instagram.com/reel/DfPA6xtFY6m/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-11-02T20:45:30+11:00",
+    "id_or_url": "2421647368574504",
+    "via": "meta"
+  }
 }
