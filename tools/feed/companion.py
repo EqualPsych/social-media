@@ -62,11 +62,29 @@ C = {
         (CR, 'Something to try', "This week, keep your usual wake time after a poor night, and plan a gentle first half hour.", 86),
         (TL, None, None, None),
     ],
+    'less-harsh': [   # 5 Nov 2026 companion. Re-cut 2 Nov 2026: hook Teal, finding Yellow; frame 4 shown in two reveal steps (first sentence, then both)
+        (TL, 'Self-criticism', "Being kinder to yourself is not always the first step.", 96),
+        (Y, 'What research shows', "The harsh side of how we treat ourselves is more closely linked with distress than the kind side.", 76),
+        (TL, 'Why it matters', "Turning the harsh voice down can be its own step, separate from being kinder.", 84),
+        (PY, 'Something to try', "When something goes wrong, notice the first sentence your mind produces. An observation, or a verdict?", 76),
+        (NB, None, None, None),
+    ],
+    'protocol': [   # 30 Nov 2026 companion. Re-cut 2 Nov 2026: hook Teal (was Yellow), finding frame Yellow (was Cream)
+        (TL, 'ADHD assessment', "A questionnaire alone is not an ADHD assessment.", 100),
+        (Y, 'Australian guidelines', "The national guideline says an ADHD diagnosis should not rest on rating scales alone.", 84),
+        (TL, 'What ours looks at', "Your history back to childhood, your health and sleep, daily life, and someone who knows you, if you choose.", 72),
+        (PY, 'What you receive', "A full written report, a letter for your GP, and a psychiatry pathway built in, if you choose.", 84),
+        (NB, None, None, None),
+    ],
 }
 END = {'grief-at-christmas': dict(title='Grief at Christmas', line='The full carousel is on our profile',
                                   source='Source: Carr et al., 2014'),
        'sleep-built': dict(title='Sleep is built, not owed', line='The full carousel is on our profile',
-                           source='Source: Borbély et al., 2016; Sweetman et al., 2026')}
+                           source='Source: Borbély et al., 2016; Sweetman et al., 2026'),
+       'less-harsh': dict(title='Less harsh can come before kinder', line='The full carousel is on our profile',
+                          source='Sources: Muris & Petrocchi, 2017; Chio et al., 2021'),
+       'protocol': dict(title='A careful ADHD assessment looks at the whole picture', line='The full carousel is on our profile',
+                        source='Source: AADPA, 2022')}
 
 if __name__ == '__main__':
     slug = sys.argv[1]
