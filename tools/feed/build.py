@@ -199,9 +199,10 @@ def agency(n, bg, e, h, ps, small, size=84):
                 f"<p style='margin-top:40px;font-size:29px;font-style:italic;line-height:1.45;color:{t['mu'] if bg != TL else 'rgba(255,255,255,.85)'}'>{small}</p></div>" + foot(bg))
 
 
-def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None):
+def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None, series=None):
     """Logo, rule, signpost, save button. Split: logo on the top block (Teal), words on the bottom (Cream).
-    Always the last slide, so it takes the carousel's total as its number. btn may be worded for the post; None drops the button."""
+    Always the last slide, so it takes the carousel's total as its number. btn may be worded for the post; None drops the button.
+    series: optional series signpost line (e.g. 'Part of our series, ADHD: the full picture'), above the small print."""
     t = TH[bg]
     if split:
         b = TH[split]
@@ -210,6 +211,7 @@ def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None):
                 f"<div style='position:absolute;left:100px;right:100px;top:55%;bottom:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center'>"
                 f"<p style='font-family:Nunito,sans-serif;font-weight:900;font-size:44px;line-height:1.25;color:{b['tx']}'>{l1}</p>"
                 + (f"<p style='margin-top:18px;font-size:34px;line-height:1.35;color:{TL};font-weight:500'>{l2}</p>" if l2 else '')
+                + (f"<p style='margin-top:20px;font-family:Nunito,sans-serif;font-weight:900;font-size:26px;line-height:1.35;color:{NB}'>{series}</p>" if series else '')
                 + (f"<p style='margin-top:26px;font-size:24px;line-height:1.5;color:{WGR}'>{small}</p>" if small else '')
                 + (f"<div style='margin-top:34px'><span class='btn' style='background:{TL};color:{WH}'>{btn}</span></div>" if btn else '')
                 + "</div>")
@@ -223,6 +225,7 @@ def cta(bg, l1, l2=None, btn='Save this for later', small=None, split=None):
                 f"<div class='rule' style='width:72px;background:{acc};margin:56px 0 48px'></div>"
                 f"<p style='font-family:Nunito,sans-serif;font-weight:900;font-size:46px;line-height:1.25;color:{t['tx']}'>{l1}</p>"
                 + (f"<p style='margin-top:18px;font-family:Nunito,sans-serif;font-weight:700;font-size:38px;line-height:1.3;color:{acc}'>{l2}</p>" if l2 else '')
+                + (f"<p style='margin-top:30px;font-family:Nunito,sans-serif;font-weight:900;font-size:28px;line-height:1.35;color:{t['tx']}'>{series}</p>" if series else '')
                 + (f"<p style='margin-top:40px;font-size:25px;line-height:1.5;color:{t['mu']};max-width:840px'>{small}</p>" if small else '')
                 + (f"<div style='margin-top:48px'><span class='btn' style='{bs}'>{btn}</span></div>" if btn else '')
                 + "</div>" + foot(bg, 'Kew &amp; Croydon, Melbourne'))
@@ -272,17 +275,17 @@ P['2026-11-03'] = [
     None,
     statement(2, CR, 'The usual advice', "&ldquo;Just be kinder to yourself.&rdquo;",
               ["It assumes harshness and kindness sit on one dial. Turn kindness up, and the critic turns down.",
-               "Many people try the kind words anyway. The words feel hollow, and the harsh voice keeps talking underneath."]),
+               "Some people try the kind words anyway. The words feel hollow, and the harsh voice keeps talking underneath."]),
     research(3, Y, 'What the research shows', "The harsh side weighs more",
              ["When research separates the kind and harsh halves of self-compassion, they do not behave like mirror images."],
-             "The harsh side is much more closely linked with distress than the kind side is.",
+             "The harsh side is more closely linked with distress than the kind side is.",
              "Muris &amp; Petrocchi (2017), meta-analysis; Chio et al. (2021), review across many cultures"),
     plain(4, TL, None, "What &ldquo;the harsh side&rdquo; means", 'In plain language',
           "Judging yourself, feeling alone when things go wrong, and getting swept up in painful thoughts.",
-          "It is usually fast and familiar. It sounds less like an opinion and more like a fact."),
+          "It can feel fast and familiar, and sound less like an opinion than a fact."),
     quote(5, PY, 'Does this sound familiar?',
           "&ldquo;I have tried saying kind things to myself. It feels fake, and the critic just keeps going.&rdquo;",
-          "This is common, and it is not a sign you are bad at self-compassion. You may have been asked to start with the harder job.", SEND_H),
+          "This happens for some people, and it is not a sign you are bad at self-compassion. You may have been asked to start with the harder job.", SEND_H),
     cards(6, CR, None, "Why kindness can be the harder door",
           ["The harsh voice can arrive on its own. The kind one often has to be called up.",
            "For some people, kindness towards themselves feels uncomfortable, even unsafe.",
@@ -301,7 +304,7 @@ P['2026-11-13'] = [
     cover(Y, 'ADHD in adults', "Not everything that <em>looks like</em> ADHD is ADHD",
           "And sometimes it is ADHD and something else as well.", split=CR),
     statement(2, TL, 'Why this matters', "Attention is affected by many things",
-              ["Focus, memory and restlessness can shift with sleep, health, stress and mood.",
+              ["Focus, memory and restlessness can shift with sleep, health and mood.",
                "Australian guidelines ask clinicians to check for these before, and alongside, an ADHD diagnosis."],
               s="Source: AADPA, 2022"),
     research(3, Y, 'Sleep', "Poor sleep can look a lot like ADHD", [],
@@ -309,7 +312,7 @@ P['2026-11-13'] = [
              "Source: AADPA, 2022; van der Ham et al., 2024"),
     cards(4, CR, 'Physical health', "Things worth ruling in or out",
           ["Hearing or vision problems", "Thyroid conditions", "Anaemia", "Some medicines, and stimulants such as caffeine"],
-          note="These are simple for a GP to check.", s="Source: AADPA, 2022"),
+          note="A GP can check for these if needed.", s="Source: AADPA, 2022"),
     statement(5, NB, 'Trauma and PTSD', "Overlap, and often both",
               ["PTSD can bring attention difficulties that overlap with ADHD.",
                "Research suggests the two also commonly occur together, so a careful assessment considers both."],
@@ -323,7 +326,8 @@ P['2026-11-13'] = [
                "Midlife changes deserve careful, open-minded assessment."],
               s="Source: Osianlis et al., 2025"),
     cta(NB, 'This is why our assessment includes a health and sleep history,',
-        'and a letter for your GP about anything worth checking.', btn=None),
+        'and a letter for your GP about anything worth checking.', btn='Save this for later',
+        series='Part of our series, ADHD: the full picture'),
 ]
 
 # 17 Nov: Fear of compassion (cover teal kept). T PY Y NB CR TL CR NB
@@ -338,14 +342,14 @@ P['2026-11-17'] = [
              "Kirby et al. (2019), meta-analysis; Gilbert et al. (2011)", size=76),
     plain(4, NB, None, "What &ldquo;fear of compassion&rdquo; means", 'In plain language',
           "A sense that kindness, from others or from yourself, is something to be wary of.",
-          "Warmth can reopen old places, including grief for care that was wanted and not received."),
+          "Researchers suggest warmth can reopen old places, including grief for care that was wanted and not received."),
     quote(5, CR, 'Does this sound familiar?',
           "&ldquo;When someone is kind to me, I make a joke or change the subject before it can land.&rdquo;",
-          "This is a recognised pattern, not a character flaw. It often made sense once.", SEND_H),
+          "This is a recognised pattern, not a character flaw. It may have made sense once.", SEND_H),
     cards(6, TL, None, "Why it can show up",
-          ["Being hard on yourself has felt like it kept you safe", "Kindness can feel undeserved, or like a trap",
+          ["Being hard on yourself may have felt like it kept you on track", "Kindness can feel uncomfortable or hard to trust",
            "Warmth can stir up old grief", "Self-compassion can seem weak or self-indulgent"],
-          note="Most of these are sensible responses to earlier experience."),
+          note="These can be sensible responses to earlier experience.", s="Source: Gilbert et al., 2011; Kirby et al., 2019"),
     agency(7, CR, 'One thing to notice this week', "Notice the flinch",
            ["When kindness comes your way, notice what happens in your body before you decide what it means.",
             "A tight chest. A joke. A change of subject. Noticing is enough."],
@@ -361,7 +365,7 @@ P['2026-11-27'] = [
                "Our assessment is built around that guideline."], s="Source: AADPA, 2022, recommendation 2.1.4"),
     research(3, Y, 'Before we meet', "Four questionnaires, one at a time", [],
              "Attention and mood. Sleep and health. Growing up. Daily life, and what it takes to keep it working.",
-             "Each one arrives after the last is done, so it never feels like a pile of paperwork."),
+             "Each one arrives after the last is done, so you are not handed a pile of paperwork at once."),
     cards(4, CR, 'Two appointments', "What we look at together",
           ["Your childhood and development, with school reports if you have them", "Your health and sleep",
            "How things work day to day, and the effort it takes", "Input from someone who knows you well, if you choose"], size=76),
@@ -374,14 +378,15 @@ P['2026-11-27'] = [
     statement(7, NB, 'A pathway built in, if you choose', "Psychiatry, already connected",
               ["We developed our psychiatry pathway with Dr Luisa Fernandez of North Psychiatry.",
                "With a GP referral, our report goes to her. She completes the picture with her own assessment and takes on any medical care. Therapy with us stays optional."], size=78),
-    cta(TL, 'Adult ADHD assessment', 'Kew, Croydon and online', btn=None, small=MG, split=CR),
+    cta(TL, 'Adult ADHD assessment', 'Kew, Croydon and online', btn='Save this for when you are ready', small=MG, split=CR,
+        series='Part of our series, ADHD: the full picture'),
 ]
 
 # 8 Dec: Grief at Christmas (cover paper). CR TL Y PY NB CR TL NB
 P['2026-12-08'] = [
     cover(CR, 'Grief at Christmas', "A hard Christmas is <em>not a sign</em> your grief has gone wrong.",
           "What actually separates grief from grief that has become stuck."),
-    statement(2, TL, 'Grief at Christmas', "Most of us carry a timetable for grief.",
+    statement(2, TL, 'Grief at Christmas', "It is easy to carry a timetable for grief.",
               ["By the first Christmas, there is a quiet sense that things should be settling.",
                "But how much it hurts on one day tells you very little."]),
     research(3, Y, 'What the research shows', "Meaningful dates bring grief close", [],
@@ -389,11 +394,12 @@ P['2026-12-08'] = [
              "Source: Carr et al., 2014, Journals of Gerontology"),
     plain(4, PY, 'A term worth knowing', "Prolonged grief disorder", 'In plain language',
           "Grief that stays at full intensity for many months, centres on longing for the person, and makes daily life hard to manage. It differs from typical grief in how intense and how long, not in kind.",
-          "Most people who grieve never meet this description.", size=80),
+          "Most people who grieve never meet this description.", size=80,
+          s="Source: Killikelly et al., 2025, The Lancet"),
     quote(5, NB, 'Does this sound familiar?',
           "&ldquo;Everyone else seems to be moving on. I still reach for the phone to tell her things.&rdquo;",
           "This is a recognised part of grief. It is not a sign something is wrong with you.", SEND_N),
-    cards(6, CR, 'It is not just one thing', "What can make grief heavier",
+    cards(6, CR, 'It is not just one thing', "What is linked with heavier grief",
           ["Grief or low mood before the loss", "An unexpected death", "A violent death", "Losing a partner or a child"],
           note="This is not a forecast. It is a reason to be gentle with the pace.",
           s="Source: Buur et al., 2024, Clinical Psychology Review"),
@@ -434,27 +440,49 @@ P['2026-12-16'] = [
 P['2027-02-02'] = [
     cover(TL, 'Sleep drive', "Sleep is <em>built,</em> not owed.",
           "Why sleeping in after a bad night can make the next night harder when sleep is already a struggle.", 100),
-    None, None, None, None, None, None, None,
+    None, None,
+    # 2 Nov 2026 should-fix: slides 4 to 6 added; each reproduced the original pixel for pixel before the wording change.
+    plain(4, CR, 'A term worth knowing', "Sleep drive", 'In plain language',
+          "The pressure to sleep that builds while you are awake. In the two-process model, a sleep-in starts the build later, so less of it is there at bedtime.",
+          note="Source: Borb&eacute;ly et al., 2016", size=96),
+    quote(5, TL, 'Does this sound familiar?',
+          "A bad night. You stay in bed until ten. Then you are wide awake at midnight.",
+          "A common pattern. Each step makes sense on its own. Together they can keep poor sleep going.", SEND_N),
+    cards(6, PY, 'Where the debt idea still holds', "It depends what kind of short you are",
+          ["Short on <b>time</b> for sleep across a busy working week", "Then a modest catch-up on days off may be worthwhile",
+           "<b>Lying awake</b> is different, and a sleep-in can keep it going", "Late sleep-ins also cut into morning light"],
+          s="Source: Sletten et al., 2023; Sweetman et al., 2026", size=74),
+    None, None,
 ]
 
-# 16 Feb: Sleep drive and coffee (cover paper). Only slides 4, 5 and 7 (2 Nov audit) are defined; each reproduced
-# the original pixel for pixel before the wording change.
+# 16 Feb: Sleep drive and coffee (cover paper). Rebuilt in full 2 Nov 2026 (should-fix audit): every slide is defined, each
+# kept slide reproduced the original pixel for pixel first. Re-ordered from the reader: the afternoon-coffee moment now
+# opens (slide 2, no quotation marks), the build-up of sleep pressure follows, then what coffee does (research), the term
+# adenosine, the nap as a second loop, the try step and the CTA. CR TL PY Y CR TL Y split(TL/CR)
 P['2027-02-16'] = [
-    None, None, None,
-    plain(4, PY, 'A term worth knowing', "Adenosine", 'In plain language',
+    cover(CR, 'Sleep drive', "Coffee does not remove sleepiness. It <em>hides the signal.</em>",
+          "What sleep drive is, and how coffee and naps change it.", 92),
+    statement(2, TL, 'The afternoon coffee', "Three coffees to get through the afternoon. Then awake until one.",
+              ["Caffeine can reach well into the night, and the same coffee can affect people differently."],
+              s="Source: Gardiner et al., 2023", send="Send this to someone on their third coffee of the afternoon."),
+    statement(3, PY, 'What was building all along', "Sleepiness seems to arrive at bedtime",
+              ["Heavy eyelids. The same line read twice.",
+               "In fact, the pull to sleep has been building since the moment you woke."]),
+    research(4, Y, 'So what does the coffee do?', "Coffee blocks a message. The need for sleep is still there.", [],
+             "Caffeine blocks the receptors adenosine acts on. You can feel less sleepy, especially on days you are short on sleep, while the need for sleep is still there.",
+             "Source: Reichert et al., 2022", size=76),
+    plain(5, CR, 'The message has a name', "Adenosine", 'In plain language',
           "A substance in the brain that rises when we stay awake for a long time, and can quieten the systems that keep us alert.",
           "It is one of several signals behind sleep drive, and the research is still developing.", size=96,
           s="Source: Reichert et al., 2022"),
-    quote(5, TL, 'Does this sound familiar?',
-          "&ldquo;Three coffees got me through the afternoon. Then I lay awake until one.&rdquo;",
-          "Caffeine can reach well into the night, and the same coffee can affect people differently.", SEND_N,
-          s="Source: Gardiner et al., 2023"),
-    None,
-    agency(7, Y, 'One thing to try this week', "Move the last coffee a little earlier",
+    statement(6, TL, 'And the afternoon nap?', "A nap and a night’s sleep draw on the same supply.",
+              ["Sleep at any time of day spends some of the pressure to sleep. A long afternoon nap can leave less of it for tonight."],
+              s="Source: Cousins et al., 2021"),
+    agency(7, Y, 'One small change to try', "Move the last coffee a little earlier",
            ["Notice when your last coffee is, and try having it a little earlier.",
             "Watch the size of one dose too. Several coffees or a pre-workout at once can reach into the night."],
            "Caffeine affects people differently. Notice what is true for you.", size=80),
-    None,
+    cta(TL, 'What is sleep drive?', READ, split=CR),
 ]
 
 # Singles

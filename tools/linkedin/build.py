@@ -156,7 +156,7 @@ page('2026-11-10-self-criticism', 'white', [
   ('h1', 'Self-compassion bundles *two different things*'),
   ('table', 'Easing harshness', 'Building warmth', [
      ('Self-judgement, isolation, getting swept up in failures', 'Turning towards yourself with warmth'),
-     ('More closely linked to distress', 'Mattered more for wellbeing')]),
+     ('More closely linked to distress', 'Linked a little more with wellbeing')]),
   ('line', 'For some people who are most self-critical, kindness itself can feel threatening. If "be kinder to yourself" meets resistance, that response is information.'),
   ('note', 'Mostly associations, not cause and effect.'),
 ], 'Sources: Gilbert et al., 2011; Muris & Petrocchi, 2017; Kirby et al., 2019; Chio et al., 2021; Wakelin et al., 2022')
@@ -191,8 +191,8 @@ page('2026-11-19-insomnia', 'cream', [
 
 page('2026-11-26-loneliness', 'white', [
   ('pill', 'Loneliness'),
-  ('h1', 'Loneliness can arise even when someone is *not isolated*'),
-  ('list', 'Cognitive behavioural approaches had the most consistent evidence. They focused on', [
+  ('h1', 'Cognitive behavioural approaches had the *most consistent* evidence'),
+  ('list', 'These approaches focused on', [
      'Reappraising unhelpful thoughts about loneliness',
      'Easing avoidance',
      'Building coping skills and engaging socially']),
@@ -210,11 +210,10 @@ page('2026-12-01-in-practice-11', 'teal', [
      '<b>Three consult questions</b> and when to consider a referral'], 'num'),
   ('line', 'Free issue and patient handout on our referrers page. Lifeline: <span style="white-space:nowrap">13 11 14</span>.'),
 ], 'Sources: Carr et al., 2014; Aoun et al., 2018; Avis et al., 2025; Killikelly et al., 2025')
-page('2026-11-03-demoralization', 'teal', [
+page('2026-11-03-demoralization', 'white', [
   ('pill', 'Low mood'),
   ('h1', 'Demoralization or depression? What *tells them apart*'),
   ('table3', 'Demoralization', 'Depression', [
-     ('Hallmark', 'Feeling unable to cope or see a way forward', 'Loss of pleasure in things once enjoyed'),
      ('Pleasure', 'Usually still present', 'Usually fades'),
      ('Poor concentration, low energy, poor sleep', 'Usually absent', 'May be present')]),
   ('line', 'The two can occur separately or together. The distinction is a prompt to look closer.'),
@@ -240,4 +239,14 @@ page('2027-02-23-caffeine-dose-timing', 'butter', [
   ('q', 'Ask about the whole day', 'When is your last caffeine, and how much at once?'),
   ('note', 'The dose trial studied young healthy men, and responses to caffeine vary.'),
 ], 'Sources: Gardiner et al., 2023; Gardiner et al., 2025')
+page('2027-02-02-in-practice-13', 'butter', [
+  ('pill', 'In Practice, issue 13'),
+  ('h1', 'Sleep drive and a *regular wake time*'),
+  ('list', 'What the issue covers', [
+     '<b>How sleep drive builds,</b> and why a sleep-in or nap leaves less at bedtime',
+     '<b>Adenosine and caffeine:</b> one signal among several, and how caffeine masks it',
+     '<b>A consistent rise time</b> in Australian insomnia guidance',
+     '<b>Three consult questions</b> and when to consider a referral'], 'num'),
+  ('line', 'Free issue and patient handout on our referrers page.'),
+], 'Sources: Borbély et al., 2016; Reichert et al., 2022; Gardiner et al., 2023; Sweetman et al., 2026')
 print('built')
