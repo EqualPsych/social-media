@@ -135,12 +135,12 @@ page('2026-11-02-in-practice-10', 'butter', [
   ('pill', 'In Practice, issue 10'),
   ('h1', 'Being less harsh is not the same as *being kinder*'),
   ('list', 'What the issue covers', [
-     '<b>Two levers, not one.</b> The harsh side of self-compassion sits closer to distress',
+     '<b>Two levers, not one.</b> Research suggests the harsh side of self-compassion sits closer to distress',
      '<b>What to listen for:</b> two forms of the inner critic',
-     '<b>Self-criticism is changeable</b>',
+     '<b>Self-criticism can shift</b>',
      '<b>Three consult questions</b> and when to consider a referral'], 'num'),
   ('line', 'Free issue and patient handout on our referrers page.'),
-], 'Sources: Löw et al., 2020; Millard et al., 2023; Wakelin et al., 2022')
+], 'Sources: Buric et al., 2026; Löw et al., 2020; Millard et al., 2023; Wakelin et al., 2022')
 
 page('2026-11-05-safety-behaviours', 'cream', [
   ('pill', 'Anxiety'),
