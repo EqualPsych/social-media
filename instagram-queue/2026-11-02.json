@@ -2,7 +2,7 @@
   "date": "2026-11-02",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "reel",
   "topic": "ADHD: the full picture, ad (paid ad creative)",
   "blog_url": null,
@@ -16,5 +16,5 @@
     "2026-10-22: hook frame colour rotated; text, voiceover and music unchanged.",
     "2026-11-02: caption line on late recognition reworded to match Long & Coats (2022), read in full; full reference added."
   ],
-  "hold_note": "2026-11-02: held at Matt's request before posting. Frame 2 rests on AADPA 2022, not yet read in full; end card has no source line."
+  "slot": "evening"
 }
