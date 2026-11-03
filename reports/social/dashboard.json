@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T21:58:15Z",
+ "generated": "2026-11-03T22:03:28Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1046,9 +1046,9 @@
    "format": "in practice summary",
    "kind": "In practice summary",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-04T08:25:31+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7523495599237795840/",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-02-in-practice-10.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-04.json",
