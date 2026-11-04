@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-24",
+  "platform": "instagram",
+  "account": "@equal_psychology",
+  "status": "approved",
+  "format": "reel",
+  "goal": "save",
+  "cover": "split",
+  "topic": "Breath series 4: Cyclic sighing (animated, guided, research)",
+  "blog_url": null,
+  "video": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-24-cyclic-sighing.mp4",
+  "voice": "david",
+  "music": "piano",
+  "caption": "Cyclic sighing slows down a sigh your body already does, and repeats it.\n\nIn a lab study, tension tended to build before a natural sigh and ease after it, but one sigh on cue after a stressful task didn't ease it the same way. In a month-long Stanford study, five minutes of daily cyclic sighing lifted mood more than mindfulness meditation. Both studies were small, mostly with young, healthy adults.\n\nHow to try it: take a full, slow inhale through your nose. At the top, take one short, sharp sniff in to fully expand your lungs. Then breathe out in one long, slow exhale through your mouth. The Reel paces it at about three seconds in, one for the sniff and eight out, but go at your own pace.\n\nIf you feel light-headed, go back to your usual breathing. Research on this technique has excluded people with heart disease, glaucoma, a history of seizures or pregnancy, so check with your doctor first if any of these apply to you.\n\nSave this for another time.\n\nResearch:\nBalban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D., & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895. https://doi.org/10.1016/j.xcrm.2022.100895\nRiedl, E. M., Bracklo, T., Wimmer, K., Perzl, J., Gdynia, H.-J., Thomas, J., & Surzykiewicz, J. (2026). Simply breathing anxiety away? A pilot, just-in-time ecological momentary intervention study of one-minute cyclic sighing versus box breathing as tools for acute anxiety reduction and attention promotion in real life. Anxiety, Stress, & Coping, 39(5), 608-622. https://doi.org/10.1080/10615806.2026.2659809\nVlemincx, E., Taelman, J., Van Diest, I., & Van den Bergh, O. (2010). Take a deep breath: The relief effect of spontaneous and instructed sighs. Physiology & Behavior, 101(1), 67-73. https://doi.org/10.1016/j.physbeh.2010.04.015\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #cyclicsighing #breathwork #breathingexercises #psychologymelbourne",
+  "build_note": "Breath series 4 (animated breath-line landscape on cream; code in /home/claude/sigh). Papers read in full from Drive (Research papers > Breathwork): Balban 2023, Riedl 2026, Vlemincx 2010, Hanley 2025 (not cited). Pacing 3/1/8 s from Riedl's example timings; the app's preset is self-paced (2/0.5/6 default). Voice: one David take, 913 credits, cut into line clips placed on the breath. Matt approved and asked to schedule (5 Nov 2026)."
+}
