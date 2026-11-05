@@ -6,10 +6,11 @@
  "format": "single",
  "cover": "sunshine",
  "goal": "share",
- "topic": "Burnout: flat after a break says more about the work (single)",
- "blog_url": "https://equalpsychology.com.au/blog/burnout-recovery-why-rest-is-not-the-whole-answer",
+ "topic": "Time off and switching off are not the same thing (single, research-led, not blog)",
+ "blog_url": null,
  "media": [
-  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-12-burnout-the-work/single.png"
+  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-12-time-off-switching-off/single.png"
  ],
- "caption": "Feeling flat soon after a break can say more about the work than about your rest.\n\nThe World Health Organization describes burnout as a work problem, the result of chronic workplace stress that has not been well managed. When exhaustion comes back after rest, it is information about what you went back to, not proof you rested badly.\n\nFull article: link in bio.\n\nSources:\nWorld Health Organization. (2019). Burn-out an \"occupational phenomenon\": International Classification of Diseases. https://www.who.int/news-room/detail/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#burnout #burnoutrecovery #workstress #mentalhealth #equalpsychology"
+ "caption": "Took a break and still feel like you never left?\n\nTime off and switching off from work aren't the same thing. A summer break can be full of lunches, travel and \"one quick email\".\n\nIn studies of healthy workers, mentally switching off from work while away was one of the things most linked with feeling better after a holiday. That's a link, not proof of cause, and these weren't studies of people with burnout.\n\nSend this to someone who spent their break answering \"one quick email\".\n\nSource:\nGrant, R. S., Buchanan, B. E., & Shockley, K. M. (2025). I need a vacation: A meta-analysis of vacation and employee well-being. Journal of Applied Psychology. https://doi.org/10.1037/apl0001262\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#burnout #backtowork #workstress #mentalhealth #equalpsychology",
+ "build_note": "Research-led January post (ScrapeCreators listening: r/auscorp 'the Christmas break wasn't a break'). Replaces the blog single. Claim map rows 25, 27. 5 Nov 2026."
 }
