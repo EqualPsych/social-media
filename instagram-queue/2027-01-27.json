@@ -14,8 +14,7 @@
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-03.mp4",
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-04.mp4",
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-05.mp4",
-  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-06.mp4",
-  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-07.mp4"
+  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-06.mp4"
  ],
  "caption": "Logged off at five, still at work in your head at nine?\n\nSwitching off from work in your own time can be learnt. A review of programs for working adults found they helped people do it, on average. The most helpful ones worked on boundaries between work and home, handling the feelings work leaves behind, and sleep. Longer programs helped more than very short ones.\n\nA small end-of-workday routine is one place to start: write tomorrow's to-do list, do one small closing act, and pick a time when work messages wait. The first two are examples the researchers give, not tested one by one. These were studies of employees in general, not people with burnout.\n\nAnd if the workload itself is too much, a routine won't fix that. That part sits with the workplace too.\n\nSave this for 5pm.\n\nSources:\nKarabinski, T., Haun, V. C., Nübold, A., Wendsche, J., & Wegge, J. (2021). Interventions for improving psychological detachment from work: A meta-analysis. Journal of Occupational Health Psychology. https://doi.org/10.1037/ocp0000280\nDemerouti, E. (2024). Burnout: A comprehensive review. Zeitschrift für Arbeitswissenschaft. https://doi.org/10.1007/s41449-024-00452-3\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#burnout #switchingoff #worklifebalance #workstress #equalpsychology",
  "build_note": "Research-led January post. Replaces the 26 Jan single (26 Jan is Australia Day). Claim map rows 36-42, 4. 5 Nov 2026. Rebuilt 5 Nov 2026 in native style with animated drive home (Matt). Code: /home/claude/ig/drive.",
@@ -25,9 +24,8 @@
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-03-poster.png",
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-04-poster.png",
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-05-poster.png",
-  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-06-poster.png",
-  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-07-poster.png"
+  "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-06-poster.png"
  ],
  "experiment": "animated-carousel",
- "experiment_note": "Native-style carousel (plain text, no template furniture) with a 4 s looping drive-home strip on every slide (video carousel items). First post to use video carousel slides; Facebook mirror uses the poster stills."
+ "experiment_note": "Native-style carousel (plain text, no template furniture) with a 4 s looping drive-home strip on every slide (video carousel items). First post to use video carousel slides; Facebook mirror uses the poster stills. Revised 5 Nov: 6 slides, bubble shrinks only from the routine slide, ground warms white to pale yellow, no counters or handle, loop-back close."
 }
