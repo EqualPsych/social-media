@@ -16,6 +16,10 @@
     "marimba": {
       "file": "audio/bed-marimba-strings.mp3",
       "style": "marimba, celesta and strings, ~95 BPM"
+    },
+    "warmkeys": {
+      "file": "audio/bed-warm-keys.mp3",
+      "style": "warm electric piano, fingerpicked guitar, soft bass and brushes, ~80 BPM; made for music-only Reels (5 Nov 2026)"
     }
   },
   "voices": {

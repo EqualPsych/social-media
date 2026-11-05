@@ -1,0 +1,17 @@
+{
+ "date": "2027-01-13",
+ "platform": "instagram",
+ "account": "@equal_psychology",
+ "status": "pending_review",
+ "format": "reel",
+ "cover": "butter",
+ "goal": "share",
+ "topic": "Still tired (animated Reel, music only, burnout recovery)",
+ "video": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2027-01-13-still-tired.mp4",
+ "voice": null,
+ "music": "warmkeys",
+ "experiment": "music-only",
+ "experiment_note": "Music only, text on screen (no voice). Compare with the voiced 16 Jan \"drains\" Reel: watch time, shares, skip rate.",
+ "caption": "Back at work and already tired?\n\nIn studies of healthy workers, the lift from a holiday eased back in the weeks after returning to work. That's the usual pattern, not a personal failing. These weren't studies of people with burnout.\n\nSend this to someone in their first week back.\n\nSource:\nGrant, R. S., Buchanan, B. E., & Shockley, K. M. (2025). I need a vacation: A meta-analysis of vacation and employee well-being. Journal of Applied Psychology. https://doi.org/10.1037/apl0001262\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#burnout #backtowork #workstress #mentalhealth #equalpsychology",
+ "build_note": "Built 5 Nov 2026. Music-only (new warm-keys bed, ElevenLabs eleven_music_v2_5, 900 credits) except 21 Jan (piano, for the bed rotation). Animation reused from the carousel strips."
+}
