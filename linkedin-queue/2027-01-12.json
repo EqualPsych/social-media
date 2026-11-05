@@ -2,10 +2,11 @@
  "date": "2027-01-12",
  "platform": "linkedin",
  "account": "Equal Psychology company page",
- "status": "pending_review",
+ "status": "approved",
  "format": "single finding",
  "topic": "Burnout and thinking: memory, attention and planning on the return to work",
  "image_url": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2027-01/2027-01-12-burnout-cognition.png",
  "text": "Return-to-work plans after burnout usually focus on hours and energy. Thinking may need a place in them too.\n\nA review of studies comparing people with clinical burnout with healthy comparison groups found they performed somewhat lower on tests of memory, attention and executive function, the skills behind planning and organising. The authors suggest these difficulties be considered when planning a return to work, for example by reducing cognitive demands and alternating complex tasks with simpler ones.\n\nA separate study using remote cognitive testing in people with stress-related disorders found similar modest differences, not at the level of a cognitive impairment diagnosis.\n\nOne limit is worth holding: these studies were snapshots, so they cannot show whether the difficulties cause or follow burnout, or how they change over time.\n\nIn practice: ask about concentration, memory and planning as well as fatigue, and build a lighter cognitive load into the first weeks back.\n\nKey sources:\nGavelin, H. M., Domellöf, M. E., Åström, E., Nelson, A., Launder, N. H., Stigsdotter Neely, A., & Lampit, A. (2022). Cognitive function in clinical burnout: A systematic review and meta-analysis. Work & Stress. https://doi.org/10.1080/02678373.2021.2002972\nFranke Föyen, L., Sennerstam, V., Kontio, E., Lekander, M., Hedman-Lagerlöf, E., & Lindsäter, E. (2023). Objective cognitive functioning in patients with stress-related disorders: A cross-sectional study using remote digital cognitive testing. BMC Psychiatry. https://doi.org/10.1186/s12888-023-05048-5\n\n#burnout #returntowork #occupationalhealth #psychology #equalpsychology",
- "build_note": " Image restyled 5 Nov 2026 (native: post card or sketch diagram)."
+ "build_note": " Image restyled 5 Nov 2026 (native: post card or sketch diagram).",
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

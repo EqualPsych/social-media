@@ -1,7 +1,7 @@
 {
  "date": "2027-01-19",
  "platform": "google_business_profile",
- "status": "pending_review",
+ "status": "approved",
  "topic": "RecoveringFromBurnout",
  "locations": {
   "Kew": "locations/7469801593432049842",
@@ -11,5 +11,6 @@
  "cta_url": "https://equalpsychology.com.au/blog/recovering-from-burnout-what-recovery-looks-like",
  "image_url": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2027-01/2027-01-19-recovering-from-burnout.png",
  "summary": "Feeling better after burnout is not always the same as feeling well. Recovery tends to happen in layers.\n\nIn this article, psychologist Natalia Cajide explains how the kind of rest people need can change over time, why switching off from work can be practised, and why memory and focus may take a while to settle.\n\nEqual Psychology provides psychological support for adults experiencing burnout and chronic stress in Kew, Croydon, and online across Melbourne.\n\nMedicare rebates available with a GP referral.\n\nRead more: https://equalpsychology.com.au/blog/recovering-from-burnout-what-recovery-looks-like",
- "results": {}
+ "results": {},
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

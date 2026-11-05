@@ -1,7 +1,7 @@
 {
  "date": "2027-01-05",
  "platform": "google_business_profile",
- "status": "pending_review",
+ "status": "approved",
  "topic": "RestNotWholeAnswer",
  "locations": {
   "Kew": "locations/7469801593432049842",
@@ -11,5 +11,6 @@
  "cta_url": "https://equalpsychology.com.au/blog/burnout-recovery-why-rest-is-not-the-whole-answer",
  "image_url": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2027-01/2027-01-05-rest-not-whole-answer.png",
  "summary": "Back at work after a break, and it can feel like you never left. Rest helps, but burnout is also about the conditions that keep draining you.\n\nIn this article, psychologist Matthew Hallam explains why, in studies of healthy workers, the lift from a holiday tends to fade after the return to work, and why recovery from burnout often involves changes to work as well as rest.\n\nEqual Psychology provides psychological support for adults experiencing burnout and chronic stress in Kew, Croydon, and online across Melbourne.\n\nMedicare rebates available with a GP referral.\n\nRead more: https://equalpsychology.com.au/blog/burnout-recovery-why-rest-is-not-the-whole-answer",
- "results": {}
+ "results": {},
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

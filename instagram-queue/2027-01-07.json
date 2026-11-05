@@ -2,7 +2,7 @@
  "date": "2027-01-07",
  "platform": "instagram",
  "account": "@equal_psychology",
- "status": "pending_review",
+ "status": "approved",
  "format": "reel",
  "companion_of": "2027-01-05",
  "share_to_feed": false,
@@ -14,5 +14,6 @@
  "voice": null,
  "music": "warmkeys",
  "caption": "Back one day, and it's like you never left?\n\nRest refills. Fewer drains help it hold. The full carousel is on our profile: @equal_psychology\n\nSources:\nWorld Health Organization. (2019). Burn-out an \"occupational phenomenon\": International Classification of Diseases. https://www.who.int/news-room/detail/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases\nGrant, R. S., Buchanan, B. E., & Shockley, K. M. (2025). I need a vacation: A meta-analysis of vacation and employee well-being. Journal of Applied Psychology. https://doi.org/10.1037/apl0001262\nSafe Work Australia. (2022). Model Code of Practice: Managing psychosocial hazards at work. https://www.safeworkaustralia.gov.au/sites/default/files/2022-08/model_code_of_practice_-_managing_psychosocial_hazards_at_work_25082022_0.pdf\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#burnout #burnoutrecovery #workstress #mentalhealth #equalpsychology",
- "build_note": "Built 5 Nov 2026. Music-only (new warm-keys bed, ElevenLabs eleven_music_v2_5, 900 credits) except 21 Jan (piano, for the bed rotation). Animation reused from the carousel strips."
+ "build_note": "Built 5 Nov 2026. Music-only (new warm-keys bed, ElevenLabs eleven_music_v2_5, 900 credits) except 21 Jan (piano, for the bed rotation). Animation reused from the carousel strips.",
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

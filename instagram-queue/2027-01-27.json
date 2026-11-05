@@ -2,7 +2,7 @@
  "date": "2027-01-27",
  "platform": "instagram",
  "account": "@equal_psychology",
- "status": "pending_review",
+ "status": "approved",
  "format": "carousel",
  "cover": "paper",
  "goal": "save",
@@ -27,5 +27,6 @@
   "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2027-01/2027-01-27-workday-shutdown/slide-06-poster.png"
  ],
  "experiment": "animated-carousel",
- "experiment_note": "Native-style carousel (plain text, no template furniture) with a 4 s looping drive-home strip on every slide (video carousel items). First post to use video carousel slides; Facebook mirror uses the poster stills. Revised 5 Nov: 6 slides, bubble shrinks only from the routine slide, ground warms white to pale yellow, no counters or handle, loop-back close."
+ "experiment_note": "Native-style carousel (plain text, no template furniture) with a 4 s looping drive-home strip on every slide (video carousel items). First post to use video carousel slides; Facebook mirror uses the poster stills. Revised 5 Nov: 6 slides, bubble shrinks only from the routine slide, ground warms white to pale yellow, no counters or handle, loop-back close.",
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

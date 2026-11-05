@@ -2,7 +2,7 @@
  "date": "2027-01-05",
  "platform": "instagram",
  "account": "@equal_psychology",
- "status": "pending_review",
+ "status": "approved",
  "format": "carousel",
  "cover": "paper",
  "goal": "save",
@@ -27,5 +27,6 @@
  ],
  "experiment": "animated-carousel",
  "experiment_note": "Native-style carousel with a 4 s looping battery-and-drains strip on every slide (video carousel items); Facebook mirror uses poster stills.",
- "build_note": " Rebuilt 5 Nov 2026: native style, animated battery strip (code /home/claude/ig/acar/battery.py). Hook from listening research (r/auscorp)."
+ "build_note": " Rebuilt 5 Nov 2026: native style, animated battery strip (code /home/claude/ig/acar/battery.py). Hook from listening research (r/auscorp).",
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

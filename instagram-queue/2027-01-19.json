@@ -2,7 +2,7 @@
  "date": "2027-01-19",
  "platform": "instagram",
  "account": "@equal_psychology",
- "status": "pending_review",
+ "status": "approved",
  "format": "carousel",
  "cover": "paper",
  "goal": "save",
@@ -27,5 +27,6 @@
  ],
  "experiment": "animated-carousel",
  "experiment_note": "Native-style carousel with a growing plant strip (setback on slide 4, yellow bud on slide 6); video carousel items; Facebook mirror uses poster stills.",
- "build_note": " Rebuilt 5 Nov 2026: native style, animated plant strip (code /home/claude/ig/acar/plant.py)."
+ "build_note": " Rebuilt 5 Nov 2026: native style, animated plant strip (code /home/claude/ig/acar/plant.py).",
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }

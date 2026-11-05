@@ -2,7 +2,7 @@
  "date": "2027-01-29",
  "platform": "instagram",
  "account": "@equal_psychology",
- "status": "pending_review",
+ "status": "approved",
  "format": "reel",
  "companion_of": "2027-01-27",
  "share_to_feed": false,
@@ -14,5 +14,6 @@
  "voice": null,
  "music": "warmkeys",
  "caption": "Logged off at five, still at work in your head at nine?\n\nSwitching off from work can be learnt. The full carousel, with a three-step shutdown routine, is on our profile: @equal_psychology\n\nSources:\nKarabinski, T., Haun, V. C., Nübold, A., Wendsche, J., & Wegge, J. (2021). Interventions for improving psychological detachment from work: A meta-analysis. Journal of Occupational Health Psychology. https://doi.org/10.1037/ocp0000280\nDemerouti, E. (2024). Burnout: A comprehensive review. Zeitschrift für Arbeitswissenschaft. https://doi.org/10.1007/s41449-024-00452-3\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#burnout #switchingoff #worklifebalance #workstress #equalpsychology",
- "build_note": "Built 5 Nov 2026. Music-only (new warm-keys bed, ElevenLabs eleven_music_v2_5, 900 credits) except 21 Jan (piano, for the bed rotation). Animation reused from the carousel strips."
+ "build_note": "Built 5 Nov 2026. Music-only (new warm-keys bed, ElevenLabs eleven_music_v2_5, 900 credits) except 21 Jan (piano, for the bed rotation). Animation reused from the carousel strips.",
+ "approved_note": "Approved by Matt 6 Nov 2026 (\"Please schedule everything\")."
 }
