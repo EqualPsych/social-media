@@ -87,7 +87,7 @@ def jpeg_urls(urls):
         if not u.startswith(RAW + 'main/'):
             out.append(u); continue
         rel = u[len(RAW + 'main/'):]
-        if rel.lower().endswith(('.jpg', '.jpeg')):
+        if rel.lower().endswith(('.jpg', '.jpeg', '.mp4')):   # .mp4: a video slide in a carousel, used as is
             out.append(rel); continue
         jrel = re.sub(r'\.png$', '.jpg', rel, flags=re.I)
         src, dst = os.path.join(ROOT, rel), os.path.join(ROOT, jrel)
@@ -142,10 +142,13 @@ def post_instagram(d):
         else:
             kids = []
             for m in media[:20]:
-                k = api('POST', f'{IG_USER}/media', {'image_url': m, 'is_carousel_item': 'true'})['id']
+                if m.lower().split('?')[0].endswith('.mp4'):   # video slide (e.g. an animated carousel)
+                    k = api('POST', f'{IG_USER}/media', {'media_type': 'VIDEO', 'video_url': m, 'is_carousel_item': 'true'})['id']
+                else:
+                    k = api('POST', f'{IG_USER}/media', {'image_url': m, 'is_carousel_item': 'true'})['id']
                 kids.append(k)
             for k in kids:
-                wait_ready(k, tries=8, gap=5)
+                wait_ready(k, tries=20, gap=10)
             c = api('POST', f'{IG_USER}/media', {'media_type': 'CAROUSEL', 'children': ','.join(kids), 'caption': cap})['id']
             wait_ready(c, tries=8, gap=5)
     pid = api('POST', f'{IG_USER}/media_publish', {'creation_id': c})['id']
@@ -181,7 +184,7 @@ def post_facebook(d, date):
     if d.get('format') == 'reel':
         r = api('POST', f'{PAGE}/videos', {'file_url': d['video'], 'description': msg})
         return r.get('id')
-    media = d.get('media') or []
+    media = d.get('facebook_media') or d.get('media') or []   # facebook_media: still images for a carousel with video slides
     if len(media) == 1:
         r = api('POST', f'{PAGE}/photos', {'url': media[0], 'message': msg})
         return r.get('post_id') or r.get('id')
