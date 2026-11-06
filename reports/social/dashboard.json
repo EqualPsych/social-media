@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T23:43:16Z",
+ "generated": "2026-11-06T23:56:10Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1221,9 +1221,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-08-asking-for-help.thumb.jpg",
    "source": "instagram-queue/2026-11-08.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-07T10:56:04+11:00",
+   "url": "https://www.instagram.com/reel/Dfa1ehpD5PO/",
    "held_reason": null,
    "interactions": null
   },
@@ -1247,8 +1247,8 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-08-asking-for-help.thumb.jpg",
    "source": "instagram-queue/2026-11-08.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
+   "status": "posted",
+   "posted_at": "2026-11-07T10:56:08+11:00",
    "url": null,
    "held_reason": null,
    "interactions": null
