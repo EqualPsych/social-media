@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T21:39:46Z",
+ "generated": "2026-11-09T21:23:27Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1267,9 +1267,9 @@
    "format": "long-form",
    "kind": "Long-form",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-10T08:23:05+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7525669290084085760/",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-10-self-criticism.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-10.json",
