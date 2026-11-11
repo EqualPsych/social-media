@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T00:12:00Z",
+ "generated": "2026-11-11T21:23:09Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1388,9 +1388,9 @@
    "format": "single finding",
    "kind": "Single finding",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-12T08:24:00+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7526394005429862400/",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-12-self-compassion-views.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-12.json",
