@@ -2,7 +2,7 @@
   "date": "2026-11-11",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "single",
   "goal": "share",
   "cover": "midnight",
@@ -11,5 +11,14 @@
   "media": [
     "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-11/2026-11-11-less-harsh-single/post.png"
   ],
-  "caption": "You do not have to feel kind towards yourself to stop being harsh.\n\nKindness and harshness towards yourself can work like two separate dials. Turning the critic down is its own step, and it does not have to wait for warmth.\n\nNew blog up now. Link in bio.\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #psychologymelbourne #selfcompassion #innercritic #selfcriticism"
+  "caption": "You do not have to feel kind towards yourself to stop being harsh.\n\nKindness and harshness towards yourself can work like two separate dials. Turning the critic down is its own step, and it does not have to wait for warmth.\n\nNew blog up now. Link in bio.\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #psychologymelbourne #selfcompassion #innercritic #selfcriticism",
+  "posted_at": "2026-11-11T11:11:54+11:00",
+  "posted_url": "https://www.instagram.com/p/DflKhHDlwWQ/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-11-11T11:11:59+11:00",
+    "id_or_url": "117619581441312_122334456044026884",
+    "via": "meta"
+  }
 }
