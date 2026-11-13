@@ -2,7 +2,7 @@
   "date": "2026-11-13",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "carousel",
   "goal": "save",
   "topic": "ADHD: the full picture, lookalikes",
@@ -22,5 +22,14 @@
   "cover": "split",
   "redesigned": [
     "2026-10-22: rebuilt to the 3 Nov / 11 Nov standard (pill, larger type, centred, yellow call-out) and the colour rotation; wording unchanged."
-  ]
+  ],
+  "posted_at": "2026-11-13T14:36:19+11:00",
+  "posted_url": "https://www.instagram.com/p/Dfqrf8ADYdx/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-11-13T14:36:37+11:00",
+    "id_or_url": "117619581441312_122334764174026884",
+    "via": "meta"
+  }
 }
