@@ -2,7 +2,7 @@
   "date": "2026-11-15",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "reel",
   "goal": "share",
   "topic": "Your brain's best guess 5: Your compliment lands better than you expect",
@@ -14,5 +14,14 @@
   "cover": "butter",
   "redesigned": [
     "2026-10-22: hook frame colour rotated; text, voiceover and music unchanged."
-  ]
+  ],
+  "posted_at": "2026-11-13T14:38:13+11:00",
+  "posted_url": "https://www.instagram.com/reel/DfqrqkZBmxv/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-11-13T14:38:18+11:00",
+    "id_or_url": "1685877206384236",
+    "via": "meta"
+  }
 }
