@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T20:42:25Z",
+ "generated": "2026-11-18T21:23:39Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1653,9 +1653,9 @@
    "format": "single finding",
    "kind": "Single finding",
    "slot": "morning",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-19T08:23:08+11:00",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7528930819260833792/",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/linkedin/2026-11/2026-11-19-insomnia.png",
    "held_reason": null,
    "source": "linkedin-queue/2026-11-19.json",
