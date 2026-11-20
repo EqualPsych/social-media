@@ -2,7 +2,7 @@
   "date": "2026-11-20",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "reel",
   "goal": "follow",
   "topic": "ADHD: the full picture, both",
@@ -12,5 +12,14 @@
   "voice": "david",
   "music": "piano",
   "facebook_link_line": "Learn more about our adult ADHD assessment: https://equalpsychology.com.au/services/adhd-assessment",
-  "cover": "midnight"
+  "cover": "midnight",
+  "posted_at": "2026-11-20T13:32:41+11:00",
+  "posted_url": "https://www.instagram.com/reel/Df8lurugVsy/",
+  "posted_via": "meta",
+  "facebook": {
+    "status": "posted",
+    "posted_at": "2026-11-20T13:32:47+11:00",
+    "id_or_url": "29126192583699125",
+    "via": "meta"
+  }
 }
