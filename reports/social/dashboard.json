@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T21:23:39Z",
+ "generated": "2026-11-20T02:32:48Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1681,9 +1681,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/adhd-series/2026-11-20-both.thumb.jpg",
    "source": "instagram-queue/2026-11-20.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-20T13:32:41+11:00",
+   "url": "https://www.instagram.com/reel/Df8lurugVsy/",
    "held_reason": null,
    "interactions": null
   },
@@ -1707,8 +1707,8 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/adhd-series/2026-11-20-both.thumb.jpg",
    "source": "instagram-queue/2026-11-20.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
+   "status": "posted",
+   "posted_at": "2026-11-20T13:32:47+11:00",
    "url": null,
    "held_reason": null,
    "interactions": null
