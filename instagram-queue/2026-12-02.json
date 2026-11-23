@@ -2,7 +2,7 @@
   "date": "2026-12-02",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "reel",
   "cover": "lock screen (teal)",
   "goal": "share",
@@ -13,5 +13,6 @@
   "experiment": "quote-series",
   "experiment_note": "Worth sending: one-line quote drawn as an everyday object, research in the caption. Judge on sends and follows per view against our usual singles and Reels. Four posts cannot settle anything.",
   "caption": "10:47pm and the work messages are still coming in?\n\nResearchers call switching off from work in your own time psychological detachment. A review of workplace programs found the ones that worked better often built a clear boundary between work and home, including putting work messages away.\n\nSend this to someone still answering emails at 10pm.\n\nWorth sending is our new series: one short line, for the person who needs to hear it. These were studies of working adults in general, not people with burnout. And if the workload itself is too much, that sits with the workplace too.\n\nResearch:\nAgolli, A., & Holtz, B. C. (2023). Facilitating detachment from work: A systematic review, evidence-based recommendations, and guide for future research. Journal of Occupational Health Psychology, 28(3), 129-159. https://doi.org/10.1037/ocp0000353\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #worklifebalance #workstress #switchoff #mentalhealth",
-  "build_note": "Built 23 Nov 2026 (tools: ig/quotes/build_objects.py). Sources reused from verified Nov 2026 and Jan 2027 posts."
+  "build_note": "Built 23 Nov 2026 (tools: ig/quotes/build_objects.py). Sources reused from verified Nov 2026 and Jan 2027 posts.",
+  "approved_note": "Approved by Matt 23 Nov 2026 (\"approve\")."
 }

@@ -2,7 +2,7 @@
   "date": "2026-12-03",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "single",
   "cover": "light switch (paper)",
   "goal": "share",
@@ -13,5 +13,6 @@
   "experiment": "quote-series",
   "experiment_note": "Worth sending: one-line quote drawn as an everyday object, research in the caption. Judge on sends and follows per view against our usual singles and Reels. Four posts cannot settle anything.",
   "caption": "On leave, but still checking in \"just in case\"?\n\nSwitching off from work in your own time can be learnt. A review of programs for working adults found they helped people do it, on average. The most helpful ones worked on boundaries between work and home.\n\nSend this to someone about to start their leave.\n\nWorth sending is our new series: one short line, for the person who needs to hear it. These were studies of working adults in general, not people with burnout. And if the workload itself is too much, that sits with the workplace too.\n\nResearch:\nKarabinski, T., Haun, V. C., Nübold, A., Wendsche, J., & Wegge, J. (2021). Interventions for improving psychological detachment from work: A meta-analysis. Journal of Occupational Health Psychology, 26(3), 224-242. https://doi.org/10.1037/ocp0000280\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #rest #worklifebalance #holidays #mentalhealth",
-  "build_note": "Built 23 Nov 2026 (tools: ig/quotes/build_objects.py). Sources reused from verified Nov 2026 and Jan 2027 posts."
+  "build_note": "Built 23 Nov 2026 (tools: ig/quotes/build_objects.py). Sources reused from verified Nov 2026 and Jan 2027 posts.",
+  "approved_note": "Approved by Matt 23 Nov 2026 (\"approve\")."
 }

@@ -2,7 +2,7 @@
   "date": "2026-12-01",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "pending_review",
+  "status": "approved",
   "format": "single",
   "cover": "receipt (sunshine)",
   "goal": "share",
@@ -13,5 +13,6 @@
   "experiment": "quote-series",
   "experiment_note": "Worth sending: one-line quote drawn as an everyday object, research in the caption. Judge on sends and follows per view against our usual singles and Reels. Four posts cannot settle anything.",
   "caption": "Rest isn't a prize for finishing everything.\n\nIn studies of working adults, mentally switching off from work while away was one of the things most linked with feeling better after a holiday. That's a link, not proof of cause. Waiting until everything is done can mean the break never really starts.\n\nSend this to someone who hasn't stopped all year.\n\nWorth sending is our new series: one short line, for the person who needs to hear it. These were studies of working adults in general, not people with burnout. And if the workload itself is too much, that sits with the workplace too.\n\nResearch:\nGrant, R. S., Buchanan, B. E., & Shockley, K. M. (2025). I need a vacation: A meta-analysis of vacation and employee well-being. Journal of Applied Psychology. https://doi.org/10.1037/apl0001262\n\nThis content is for general informational purposes and does not constitute psychological advice. If you are experiencing significant distress, please speak with a registered health professional.\n\n#equalpsychology #rest #burnout #worklifebalance #mentalhealth",
-  "build_note": "Built 23 Nov 2026 (tools: ig/quotes/build_objects.py). Sources reused from verified Nov 2026 and Jan 2027 posts."
+  "build_note": "Built 23 Nov 2026 (tools: ig/quotes/build_objects.py). Sources reused from verified Nov 2026 and Jan 2027 posts.",
+  "approved_note": "Approved by Matt 23 Nov 2026 (\"approve\")."
 }
