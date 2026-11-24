@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-25",
   "platform": "google_business_profile",
   "status": "held",
   "topic": "FearOfCompassion",
@@ -16,6 +16,10 @@
   "rescheduled": [
     {
       "from": "2026-11-17",
+      "reason": "Moved from the admin page"
+    },
+    {
+      "from": "2026-11-22",
       "reason": "Moved from the admin page"
     }
   ]
