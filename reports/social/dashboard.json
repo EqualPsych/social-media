@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T21:46:01Z",
+ "generated": "2026-11-24T20:32:43Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1805,24 +1805,6 @@
    "interactions": null
   },
   {
-   "platform": "gbp",
-   "date": "2026-11-22",
-   "weekday": "Sunday",
-   "topic": "FearOfCompassion",
-   "hook": "For some people, kindness does not feel comforting. A compliment gets brushed off, care from others feels uncomfortable, and self-compassion exercises feel fak…",
-   "format": "Google post",
-   "kind": "Google post",
-   "slot": "morning",
-   "status": "held",
-   "locations": {},
-   "url": "https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening",
-   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2026-11/2026-11-17-fear-of-compassion.png",
-   "blog_url": "https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening",
-   "held_reason": "2026-11-17T08:28:04+11:00: blog check could not be completed. Fetching https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening returned an error (the fetch permission request timed out), so the blog could not be confirmed live. Not posted to either location.",
-   "source": "gbp-queue/2026-11-22.json",
-   "interactions": null
-  },
-  {
    "date": "2026-11-24",
    "weekday": "Tuesday",
    "topic": "Breath series 4: Cyclic sighing (animated, guided, research)",
@@ -1924,6 +1906,24 @@
    "posted_at": null,
    "url": null,
    "held_reason": null,
+   "interactions": null
+  },
+  {
+   "platform": "gbp",
+   "date": "2026-11-25",
+   "weekday": "Wednesday",
+   "topic": "FearOfCompassion",
+   "hook": "For some people, kindness does not feel comforting. A compliment gets brushed off, care from others feels uncomfortable, and self-compassion exercises feel fak…",
+   "format": "Google post",
+   "kind": "Google post",
+   "slot": "morning",
+   "status": "held",
+   "locations": {},
+   "url": "https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening",
+   "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2026-11/2026-11-17-fear-of-compassion.png",
+   "blog_url": "https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening",
+   "held_reason": "2026-11-17T08:28:04+11:00: blog check could not be completed. Fetching https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening returned an error (the fetch permission request timed out), so the blog could not be confirmed live. Not posted to either location.",
+   "source": "gbp-queue/2026-11-25.json",
    "interactions": null
   },
   {
