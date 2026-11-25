@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T02:43:58Z",
+ "generated": "2026-11-25T02:44:42Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1876,9 +1876,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-11/2026-11-25-fear-of-compassion-single/post.png",
    "source": "instagram-queue/2026-11-25.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-25T13:44:35+11:00",
+   "url": "https://www.instagram.com/p/DgJfHNAGdF7/",
    "held_reason": null,
    "interactions": null
   },
@@ -1902,9 +1902,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/2026-11/2026-11-25-fear-of-compassion-single/post.png",
    "source": "instagram-queue/2026-11-25.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-25T13:44:40+11:00",
+   "url": "https://www.facebook.com/117619581441312_122336553200026884",
    "held_reason": null,
    "interactions": null
   },
