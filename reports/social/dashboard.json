@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T20:32:43Z",
+ "generated": "2026-11-25T02:43:58Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -1917,8 +1917,11 @@
    "format": "Google post",
    "kind": "Google post",
    "slot": "morning",
-   "status": "held",
-   "locations": {},
+   "status": "posted",
+   "locations": {
+    "Kew": "posted",
+    "Croydon": "posted"
+   },
    "url": "https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening",
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/gbp/2026-11/2026-11-17-fear-of-compassion.png",
    "blog_url": "https://equalpsychology.com.au/blog/why-kindness-can-feel-threatening",
