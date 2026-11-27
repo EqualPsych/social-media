@@ -18,7 +18,7 @@ written back into the queue file in the same fields as before.
     python3 scripts/meta_post.py --check         # check the token and account access, post nothing
 """
 import argparse, json, os, re, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -153,7 +153,18 @@ def post_instagram(d):
                 wait_ready(k, tries=20, gap=10)
             c = api('POST', f'{IG_USER}/media', {'media_type': 'CAROUSEL', 'children': ','.join(kids), 'caption': cap})['id']
             wait_ready(c, tries=8, gap=5)
-    pid = api('POST', f'{IG_USER}/media_publish', {'creation_id': c})['id']
+    # Meta can report a container FINISHED and still answer media_publish with 9007 "Media ID is not available" for a
+    # short while (27 Nov 2026 carousel). A container can only be published once, so retrying the same creation_id
+    # cannot make a second post.
+    for attempt in range(4):
+        try:
+            pid = api('POST', f'{IG_USER}/media_publish', {'creation_id': c})['id']
+            break
+        except MetaError as e:
+            if '9007' not in str(e) or attempt == 3:
+                raise
+            print(f'media_publish not ready yet (attempt {attempt + 1}), waiting 30s')
+            time.sleep(30)
     try:
         link = api('GET', pid, {'fields': 'permalink'}).get('permalink')
     except MetaError:
@@ -285,13 +296,28 @@ def main():
     if a.check:
         return check()
     now = datetime.now(MEL)
-    # The workflow fires twice for each slot (one hour apart, so daylight saving is covered); the window takes the first
-    # run at or after 8:22am and 7:52pm, and the second finds the post already recorded. GitHub can start scheduled runs
-    # half an hour or more late, so the windows run to noon and midnight.
-    slot = a.slot or ('morning' if 8 <= now.hour < 12 else 'evening' if 19 <= now.hour < 24 else None)
-    if not slot:
+    if a.slot or a.date:
+        return run(a.date or now.strftime('%Y-%m-%d'), a.slot or 'morning')
+    # The workflow fires twice for each slot (one hour apart, so daylight saving is covered). GitHub can start scheduled
+    # runs many hours late (Nov 2026: 6 to 10 hours, so every run fell outside the old 8-12 / 19-24 windows and the
+    # 27 Nov post was skipped). So any run tries every slot that has already started and is not yet posted: today's
+    # morning file from 8am, today's evening file from 7pm, and before 8am yesterday's files, in case no run reached
+    # them. run() only posts files still "approved", so a slot that is already posted (or failed) is never sent again.
+    today = now.strftime('%Y-%m-%d')
+    yesterday = (now - timedelta(days=1)).strftime('%Y-%m-%d')
+    todo = []
+    if now.hour < 8:
+        todo += [(yesterday, 'morning'), (yesterday, 'evening')]
+    if now.hour >= 8:
+        todo.append((today, 'morning'))
+    if now.hour >= 19:
+        todo.append((today, 'evening'))
+    if not todo:
         print(f'Not a posting window ({now:%H:%M} Melbourne).'); return 0
-    return run(a.date or now.strftime('%Y-%m-%d'), slot)
+    rc = 0
+    for date, slot in todo:
+        rc = max(rc, run(date, slot))
+    return rc
 
 
 if __name__ == '__main__':
