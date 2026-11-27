@@ -132,6 +132,8 @@ def post_instagram(d):
         params = {'media_type': 'REELS', 'video_url': d['video'], 'caption': cap}
         if d.get('share_to_feed') is False:
             params['share_to_feed'] = 'false'
+        if d.get('thumb_offset') is not None:   # milliseconds into the video for the cover frame (default: first frame)
+            params['thumb_offset'] = str(int(d['thumb_offset']))
         c = api('POST', f'{IG_USER}/media', params)['id']
         wait_ready(c)
     else:
