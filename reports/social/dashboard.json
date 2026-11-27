@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T21:40:02Z",
+ "generated": "2026-11-27T21:44:44Z",
  "note": "Built by scripts/build_dashboard.py from the queues and reports/social. Read by equalpsychology.com.au/admin/social.",
  "followers": [
   {
@@ -2018,9 +2018,9 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-28-switch-off-ritual.thumb.jpg",
    "source": "instagram-queue/2026-11-28.json",
    "platform": "instagram",
-   "status": "approved",
-   "posted_at": null,
-   "url": null,
+   "status": "posted",
+   "posted_at": "2026-11-28T08:44:32+11:00",
+   "url": "https://www.instagram.com/reel/DgQrFFHN7_Y/",
    "held_reason": null,
    "interactions": null
   },
@@ -2044,8 +2044,8 @@
    "thumb": "https://raw.githubusercontent.com/EqualPsych/social-media/main/instagram/reels/2026-11-28-switch-off-ritual.thumb.jpg",
    "source": "instagram-queue/2026-11-28.json",
    "platform": "facebook",
-   "status": "approved",
-   "posted_at": null,
+   "status": "posted",
+   "posted_at": "2026-11-28T08:44:42+11:00",
    "url": null,
    "held_reason": null,
    "interactions": null
