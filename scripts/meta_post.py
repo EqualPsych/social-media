@@ -302,12 +302,10 @@ def main():
     # runs many hours late (Nov 2026: 6 to 10 hours, so every run fell outside the old 8-12 / 19-24 windows and the
     # 27 Nov post was skipped). So any run tries every slot that has already started and is not yet posted: today's
     # morning file from 8am, today's evening file from 7pm, and before 8am yesterday's files, in case no run reached
-    # them. run() only posts files still "approved", so a slot that is already posted (or failed) is never sent again.
+    # them (any run, at any hour, also checks yesterday). run() only posts files still "approved", so a slot that is already posted (or failed) is never sent again.
     today = now.strftime('%Y-%m-%d')
     yesterday = (now - timedelta(days=1)).strftime('%Y-%m-%d')
-    todo = []
-    if now.hour < 8:
-        todo += [(yesterday, 'morning'), (yesterday, 'evening')]
+    todo = [(yesterday, 'morning'), (yesterday, 'evening')]   # every run catches up anything from yesterday still unposted
     if now.hour >= 8:
         todo.append((today, 'morning'))
     if now.hour >= 19:
