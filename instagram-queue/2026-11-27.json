@@ -2,7 +2,7 @@
   "date": "2026-11-27",
   "platform": "instagram",
   "account": "@equal_psychology",
-  "status": "approved",
+  "status": "posted",
   "format": "carousel",
   "goal": "save",
   "topic": "ADHD: the full picture, protocol",
@@ -30,5 +30,8 @@
     "via": "meta"
   },
   "retry_note": "2026-11-28: Instagram publish failed with OAuthException 9007 (media not ready) on the manual catch-up run; reset to approved for one retry. Facebook already posted.",
-  "first_attempt_error": "OAuthException 9007: Media ID is not available"
+  "first_attempt_error": "OAuthException 9007: Media ID is not available",
+  "posted_at": "2026-11-28T08:40:00+11:00",
+  "posted_url": "https://www.instagram.com/p/DgQqpwXjmsb/",
+  "posted_via": "meta"
 }
